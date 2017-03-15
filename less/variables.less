@@ -112,6 +112,7 @@
 @border-radius-base:        35px;
 @border-radius-large:       50px;
 @border-radius-small:       20px;
+@border-radius-none:        0px;
 
 //** Global color for active items (e.g., navs or dropdowns).
 @component-active-color:    #fff;
@@ -226,9 +227,9 @@
 @legend-border-color:            @white-dark;
 
 //** Background color for textual input addons
-@input-group-addon-bg:           @gray-lighter;
+@input-group-addon-bg:          @second-brand-primary;
 //** Border color for textual input addons
-@input-group-addon-border-color: @input-border;
+@input-group-addon-border-color: @input-group-addon-bg;
 
 //** Disabled cursor for form controls and buttons.
 @cursor-disabled:                not-allowed;
@@ -468,8 +469,9 @@
 @pagination-active-bg:                 @brand-primary;
 @pagination-active-border:             @brand-primary;
 
-@pagination-disabled-color:            @white-dark;
+@pagination-disabled-color:            @white-dark; 
 @pagination-disabled-bg:               @gray-base;
+@pagination-disabked-hover-gradient:   @gray-base;
 @pagination-disabled-border:           @gray-base;
 
 
@@ -493,7 +495,7 @@
 //
 //##
 
-@jumbotron-padding:              10px;
+@jumbotron-padding:              5px;
 @jumbotron-color:                inherit;
 @jumbotron-bg:                   @brand-primary;
 @jumbotron-heading-color:        inherit;
@@ -587,7 +589,7 @@
 @label-danger-bg:             @brand-danger;
 
 //** Default label text color
-@label-color:                 @white-dark;
+@label-color:                 @white-base;
 //** Default text color of a linked label
 @label-link-hover-color:      @white-base;
 
@@ -757,12 +759,12 @@
 //** Thumbnail border color
 @thumbnail-border:            @brand-primary;
 //** Thumbnail border radius
-@thumbnail-border-radius:     @border-radius-small;
+@thumbnail-border-radius:     @border-radius-none;
 
 //** Custom text color for thumbnail captions
 @thumbnail-caption-color:     @white-base;
 //** Padding around the thumbnail caption
-@thumbnail-caption-padding:   5px;
+@thumbnail-caption-padding:   10px;
 
 
 //== Wells

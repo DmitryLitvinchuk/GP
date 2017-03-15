@@ -17,6 +17,7 @@
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
   white-space: nowrap;
+	transition: all .2s ease-in-out;
   .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @btn-border-radius-base);
   .user-select(none);
 
@@ -65,11 +66,14 @@
 
 .btn-default {
   .button-variant(@btn-default-color; @btn-default-bg; @btn-default-border);
+	background-image: linear-gradient(0deg, @btn-default-bg, @btn-default-bg);
 	  &:hover,
 	  &:focus,
 	  &.focus {
 		/*background-color: @btn-danger-bg;*/
 		  background-image: linear-gradient(0deg, @brand-danger, @brand-pink);
+		  border-color: @brand-pink;
+		  transition: background-image 2s ease-in-out;
 	  }
 }
 .btn-primary {

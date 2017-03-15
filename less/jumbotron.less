@@ -10,6 +10,11 @@
   color: @jumbotron-color;
   background-color: @jumbotron-bg;
 
+	&.large {
+		padding-top:    @jumbotron-padding*20;
+  		padding-bottom: @jumbotron-padding*20;
+	}
+	
   h1,
   .h1 {
     color: @jumbotron-heading-color;
@@ -27,7 +32,7 @@
 
   .container &,
   .container-fluid & {
-    border-radius: @border-radius-large; // Only round corners at higher resolutions if contained in a container
+    border-radius: @border-radius-none; // Only round corners at higher resolutions if contained in a container
     padding-left:  (@grid-gutter-width / 2);
     padding-right: (@grid-gutter-width / 2);
   }

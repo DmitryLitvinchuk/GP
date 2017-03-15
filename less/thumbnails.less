@@ -33,4 +33,36 @@
     padding: @thumbnail-caption-padding;
     color: @thumbnail-caption-color;
   }
+	
+	&.track {
+		position: relative;
+		
+		img {
+			width: 100%;
+			border-radius: 0px;
+		}
+		h5, h6 {
+			margin-top: 0px;
+			margin-bottom: 5px;
+		}
+		.caption {
+			padding-bottom: 0;
+		}
+		a {
+			color: @white-dark;
+			&:hover {
+				color: @link-color;
+			}
+		}
+		p {
+			opacity: 0;
+			font-size: 9px;
+			color: @white-dark;
+		}
+		&:hover {
+			p {
+				opacity: 1;
+			}
+		}
+	}
 }
