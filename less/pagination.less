@@ -42,8 +42,9 @@
     &:focus {
       z-index: 2;
       color: @pagination-hover-color;
-      background-color: @pagination-hover-bg;
-      border-color: @pagination-hover-border;
+      /*background-color: @pagination-hover-bg;*/
+      border-color: transparent;
+	  background-image: @pagination-hover-gradient;
     }
   }
 
@@ -54,8 +55,9 @@
     &:focus {
       z-index: 3;
       color: @pagination-active-color;
-      background-color: @pagination-active-bg;
-      border-color: @pagination-active-border;
+      /*background-color: @pagination-active-bg;*/
+      border-color: transparent;
+	  background-image: @pagination-hover-gradient;
       cursor: default;
     }
   }
@@ -69,6 +71,7 @@
     > a:focus {
       color: @pagination-disabled-color;
       background-color: @pagination-disabled-bg;
+	  background-image: @pagination-disabled-bg;
       border-color: @pagination-disabled-border;
       cursor: @cursor-disabled;
     }

@@ -25,6 +25,7 @@
 @brand-info:            #0a78e3;
 @brand-warning:         #fcae1b;
 @brand-danger:          #ff2366;
+@brand-pink:            #bb4be4;
 
 
 //== Scaffolding
@@ -426,25 +427,25 @@
 
 //=== Shared nav styles
 @nav-link-padding:                          10px 15px;
-@nav-link-hover-bg:                         @gray-lighter;
+@nav-link-hover-bg:                         @brand-primary;
 
-@nav-disabled-link-color:                   @gray-light;
-@nav-disabled-link-hover-color:             @gray-light;
+@nav-disabled-link-color:                   @white-base;
+@nav-disabled-link-hover-color:             @white-base;
 
 //== Tabs
-@nav-tabs-border-color:                     #ddd;
+@nav-tabs-border-color:                     @brand-primary;
 
-@nav-tabs-link-hover-border-color:          @gray-lighter;
+@nav-tabs-link-hover-border-color:          @brand-primary;
 
 @nav-tabs-active-link-hover-bg:             @body-bg;
-@nav-tabs-active-link-hover-color:          @gray;
-@nav-tabs-active-link-hover-border-color:   #ddd;
+@nav-tabs-active-link-hover-color:          @white-base;
+@nav-tabs-active-link-hover-border-color:   @brand-primary;
 
-@nav-tabs-justified-link-border-color:            #ddd;
+@nav-tabs-justified-link-border-color:            @brand-primary;
 @nav-tabs-justified-active-link-border-color:     @body-bg;
 
 //== Pills
-@nav-pills-border-radius:                   @border-radius-base;
+@nav-pills-border-radius:                   @border-radius-small;
 @nav-pills-active-link-hover-bg:            @component-active-bg;
 @nav-pills-active-link-hover-color:         @component-active-color;
 
@@ -453,21 +454,23 @@
 //
 //##
 
-@pagination-color:                     @link-color;
-@pagination-bg:                        #fff;
-@pagination-border:                    #ddd;
+@pagination-color:                     @white-base;
+@pagination-bg:                        @brand-primary;
+@pagination-border:                    @brand-primary;
 
-@pagination-hover-color:               @link-hover-color;
-@pagination-hover-bg:                  @gray-lighter;
-@pagination-hover-border:              #ddd;
+@pagination-hover-color:               @white-base;
+@pagination-hover-bg:                  @second-brand-primary;
+@pagination-hover-border:              @second-brand-primary;
+@pagination-hover-gradient:            linear-gradient(0deg, @brand-danger, @brand-pink);
+@pagination-hover-border-gradient:     linear-gradient(0deg, @brand-danger, @brand-pink);
 
-@pagination-active-color:              #fff;
+@pagination-active-color:              @white-base;
 @pagination-active-bg:                 @brand-primary;
 @pagination-active-border:             @brand-primary;
 
-@pagination-disabled-color:            @gray-light;
-@pagination-disabled-bg:               #fff;
-@pagination-disabled-border:           #ddd;
+@pagination-disabled-color:            @white-dark;
+@pagination-disabled-bg:               @gray-base;
+@pagination-disabled-border:           @gray-base;
 
 
 //== Pager
