@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 44 44">
+  <g>
+    <g>
+      <path d="m13,4h-8c-0.553,0-1,0.447-1,1v11c0,0.553 0.447,1 1,1 0.553,0 1-0.447 1-1v-10h7c0.553,0 1-0.447 1-1 0-0.553-0.447-1-1-1z"/>
+    </g>
+  </g>
+  <g>
+    <g>
+      <path fill-rule="evenodd" d="M43,0H1C0.447,0,0,0.447,0,1v42c0,0.553,0.447,1,1,1h42    c0.553,0,1-0.447,1-1V1C44,0.447,43.553,0,43,0z M42,42H2V2h40V42z"/>
+    </g>
+  </g>
+</svg>
