@@ -63,3 +63,50 @@
 .w-100 {
 	width: 100%;
 }
+
+.gradient-before {
+	content: "";
+	display: block;
+	height: 80%;
+	width: 12px;
+	background-image: linear-gradient(45deg, @brand-danger, @brand-pink);
+	position: absolute;
+	top: 10%;
+	left: -12px;
+}
+.gradient-after {
+	content: "";
+	display: block;
+	height: 80%;
+	width: 12px;
+	background-image: linear-gradient(45deg, @brand-danger, @brand-pink);
+	position: absolute;
+	top: 10%;
+	right: -12px;
+}
+.pre-gradient-before {
+	content: "";
+	display: block;
+	height: 50%;
+	width: 10px;
+	background-image: linear-gradient(45deg, transparent, @jumbotron-bg, transparent);
+	position: absolute;
+	top: 25%;
+	left: -22px;
+}
+.pre-gradient-after {
+	content: "";
+	display: block;
+	height: 50%;
+	width: 10px;
+	background-image: linear-gradient(45deg, transparent, @jumbotron-bg, transparent);
+	position: absolute;
+	top: 25%;
+	right: -22px;
+}
+
+.inline-block {
+	display: inline-block;
+	width: 100%;
+	height: auto;
+}

@@ -58,6 +58,7 @@
     }
   }
 	&.producer {
+		margin-bottom: 10px;
 		padding: 0px;
 		.img-responsive {
 			display: inline-block;
@@ -70,7 +71,7 @@
 			padding: 10px 15px;
 			vertical-align: top;
 			width: auto;
-			h1.producer-name,h6.city,h5.country {
+			h1.producer-name, h2.type, h6.city, h5.country {
 				display: inline-block;
 				text-transform: uppercase;
 				width: auto;
@@ -80,6 +81,9 @@
 				font-size: 65px;
 				margin: 0px 0px 10px;
 				vertical-align: top;
+			}
+			h2.type {
+				font-size: 35px;
 			}
 			h6.city,h5.country {
 				font-family: Mohave;
@@ -106,9 +110,55 @@
 					margin-bottom: 40px;
 				}
 			}
+			table {
+				td {
+					font-family: Mohave;
+					width: 25%;
+					font-size: 20px;
+					vertical-align: middle;
+				}
+			}
 			.producer-buttons {
 				margin: 0px 0px 20px;
 			}
 		}
+		.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
+			transition: all .2s ease-in-out;
+			transition-delay: 0s;
+			visibility: hidden;
+			opacity: 0;
+		}
+		&:hover {
+			.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+		/*&::before, &::after {
+			content: "";
+			display: none;
+		}
+		&:hover {
+			&::before {
+				content: "";
+				display: block;
+				height: 80%;
+				width: 15px;
+				background-image: linear-gradient(45deg, @brand-danger, @brand-pink);
+				position: absolute;
+				top: 10%;
+				left: -15px;
+			}
+			&::after {
+				content: "";
+				display: block;
+				height: 80%;
+				width: 15px;
+				background-image: linear-gradient(45deg, @brand-danger, @brand-pink);
+				position: absolute;
+				top: 10%;
+				right: -15px;
+			}
+		}*/
 	}
 }
