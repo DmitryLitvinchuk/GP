@@ -58,6 +58,84 @@
       pointer-events: none; // Future-proof disabling of clicks on `<a>` elements
     }
   }
+	
+	&.btn-border {
+		background-color: transparent;
+		border: 1px solid @btn-border-border-color;
+		color: @btn-border-border-color;
+		&.btn-buy {
+			font-family: Roboto-Light;
+		}
+		&.btn-circle {
+			margin: 2px;
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+			font-family: Mohave;
+			font-style: italic;
+			font-size: 20px;
+			&.play {
+				font-size: 30px;
+				padding: 6px 12px 6px 6px;
+				&.play-sm {
+					width: 30px;
+					height: 30px;
+					font-size: 12px;
+					padding: 2px 2px 2px 0px;
+				}
+				  &:hover,
+				  &:focus,
+				  &.focus {
+					border-color: @brand-warning;
+					background-image: linear-gradient(25deg, @brand-success, @brand-warning);
+				  }
+			}
+			&.like {
+				width: 50px;
+				height: 50px;
+				font-size: 21px;
+				padding: 6px 4px 6px 0px;
+				&.like-sm {
+					width: 30px;
+					height: 30px;
+					font-size: 12px;
+					padding: 2px 2px 2px 0px;
+				}
+			}
+			&.works {
+				padding: 0px 8px 6px 4px;
+				text-align: center;
+				h4 {
+					margin: 0;
+					margin-bottom: 4px;
+					font-size: 24px;
+				}
+				p {
+					margin: 0;
+					font-size: 12px;
+				}
+				  &:hover,
+				  &:focus,
+				  &.focus {
+					border-color: @brand-pink;
+					background-image: linear-gradient(15deg, @brand-pink, @brand-info);
+				  }
+			}
+		}
+		  &:hover,
+		  &:focus,
+		  &.focus {
+			color: @btn-border-border-color-hover;
+			border-color: @brand-pink;
+			background-image: linear-gradient(45deg, @brand-danger, @brand-pink);
+			text-decoration: none;
+		  }
+	}
+	&.btn-message {
+		position: absolute;
+		right: 5px;
+		bottom: 7px;
+	}
 }
 
 

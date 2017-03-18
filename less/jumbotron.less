@@ -4,6 +4,7 @@
 
 
 .jumbotron {
+	position: relative;
   padding-top:    @jumbotron-padding;
   padding-bottom: @jumbotron-padding;
   margin-bottom: @jumbotron-padding;
@@ -56,4 +57,58 @@
       font-size: @jumbotron-heading-font-size;
     }
   }
+	&.producer {
+		padding: 0px;
+		.img-responsive {
+			display: inline-block;
+			&.avatar {
+				max-width: 350px;
+			}
+		}
+		.caption {
+			display: inline-block;
+			padding: 10px 15px;
+			vertical-align: top;
+			width: auto;
+			h1.producer-name,h6.city,h5.country {
+				display: inline-block;
+				text-transform: uppercase;
+				width: auto;
+				font-family: Mohave;
+				font-style: italic;
+				font-weight: bold;
+				font-size: 65px;
+				margin: 0px 0px 10px;
+				vertical-align: top;
+			}
+			h6.city,h5.country {
+				font-family: Mohave;
+				margin-top: 9px;
+				margin-left: 12px;
+				font-size: 18px;
+				font-weight: 100;
+			}
+			h5.country {
+				margin-left: 4px;
+				font-weight: bold;
+			}
+			h3.producer-info {
+				font-family: Mohave;
+				font-style: normal;
+				font-size: 20px;
+				margin: 5px 0px;
+				small {
+					font-style: italic;
+					font-size: 20px;
+					font-weight: bold;
+				}
+				&:last-child {
+					margin-bottom: 40px;
+				}
+			}
+			.producer-buttons {
+				margin: 0px 0px 20px;
+			}
+		}
+	}
 }
