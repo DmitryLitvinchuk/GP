@@ -5143,6 +5143,8 @@ a.badge:focus {
   }
 }
 .jumbotron.producer {
+  transition: all 0.2s ease-in-out;
+  opacity: 0.9;
   margin-bottom: 10px;
   padding: 0px;
   /*&::before, &::after {
@@ -5227,12 +5229,6 @@ a.badge:focus {
 .jumbotron.producer .caption h3.producer-info:last-child {
   margin-bottom: 40px;
 }
-.jumbotron.producer .caption table td {
-  font-family: Mohave;
-  width: 25%;
-  font-size: 20px;
-  vertical-align: middle;
-}
 .jumbotron.producer .caption .producer-buttons {
   margin: 0px 0px 20px;
 }
@@ -5245,12 +5241,47 @@ a.badge:focus {
   visibility: hidden;
   opacity: 0;
 }
+.jumbotron.producer:hover {
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
 .jumbotron.producer:hover .gradient-before,
 .jumbotron.producer:hover .gradient-after,
 .jumbotron.producer:hover .pre-gradient-before,
 .jumbotron.producer:hover .pre-gradient-after {
   visibility: visible;
   opacity: 1;
+}
+.jumbotron table.table-hover {
+  background-color: #181923;
+}
+.jumbotron table.table-hover td {
+  font-family: Mohave;
+  width: 25%;
+  font-size: 20px;
+  vertical-align: middle;
+}
+.jumbotron.ad {
+  padding: 10px 15px;
+}
+.jumbotron.ad table td {
+  font-family: Mohave;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.jumbotron.ad h1,
+.jumbotron.ad h2,
+.jumbotron.ad h3,
+.jumbotron.ad h4,
+.jumbotron.ad h5,
+.jumbotron.ad h6 {
+  margin: 0;
+}
+.jumbotron.ad h2.type {
+  margin-bottom: 5px;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: Kulag-Regular;
 }
 .thumbnail {
   position: relative;
@@ -5313,6 +5344,8 @@ a.thumbnail.active {
   color: #ffffff;
 }
 .thumbnail.track {
+  transition: all 0.2s ease-in-out;
+  opacity: 0.9;
   position: relative;
   border: none;
   padding: 0px 0px 3px;
@@ -5461,6 +5494,10 @@ a.thumbnail.active {
 .thumbnail.track .gradient-before,
 .thumbnail.track .gradient-after {
   background-image: linear-gradient(45deg, #8963f6, #6fecf1);
+}
+.thumbnail.track:hover {
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
 }
 .thumbnail.track:hover .bg-cover {
   transition: all 0.2s ease-in-out;

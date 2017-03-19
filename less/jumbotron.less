@@ -58,6 +58,8 @@
     }
   }
 	&.producer {
+		transition: all .2s ease-in-out;
+		opacity: 0.9;
 		margin-bottom: 10px;
 		padding: 0px;
 		.img-responsive {
@@ -110,14 +112,6 @@
 					margin-bottom: 40px;
 				}
 			}
-			table {
-				td {
-					font-family: Mohave;
-					width: 25%;
-					font-size: 20px;
-					vertical-align: middle;
-				}
-			}
 			.producer-buttons {
 				margin: 0px 0px 20px;
 			}
@@ -129,6 +123,8 @@
 			opacity: 0;
 		}
 		&:hover {
+			transition: all .2s ease-in-out;
+			opacity: 1;
 			.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
 				visibility: visible;
 				opacity: 1;
@@ -160,5 +156,34 @@
 				right: -15px;
 			}
 		}*/
+	}
+	table.table-hover {
+		background-color: @jumbotron-bg;
+		td {
+			font-family: Mohave;
+			width: 25%;
+			font-size: 20px;
+			vertical-align: middle;
+		}
+	}
+	&.ad {
+		//margin: 15px;
+		padding: 10px 15px;
+		table {
+			td {
+			font-family: Mohave;
+			font-size: 14px;
+			vertical-align: middle;
+			}
+		}
+		h1, h2, h3, h4, h5, h6 {
+			margin: 0;
+		}
+		h2.type {
+			margin-bottom: 5px;
+			font-size: 40px;
+			text-transform: uppercase;
+			font-family: Kulag-Regular;
+		}
 	}
 }
