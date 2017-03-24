@@ -1206,6 +1206,175 @@ hr {
   /* Имя шрифта */
   /* Путь к файлу со шрифтом */
 }
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/112081-music-and-multimedia-linear/font/Flaticon.eot");
+  src: url("../fonts/112081-music-and-multimedia-linear/font/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/112081-music-and-multimedia-linear/font/Flaticon.woff") format("woff"), url("../fonts/112081-music-and-multimedia-linear/font/Flaticon.ttf") format("truetype"), url("../fonts/112081-music-and-multimedia-linear/font/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("Flaticon.svg#Flaticon") format("svg");
+  }
+}
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-size: 14px;
+  font-style: normal;
+  margin-left: 0px;
+}
+.flaticon-acoustic-guitar:before {
+  content: "\f100";
+}
+.flaticon-backward-button:before {
+  content: "\f101";
+}
+.flaticon-banjo:before {
+  content: "\f102";
+}
+.flaticon-bell:before {
+  content: "\f103";
+}
+.flaticon-cassette:before {
+  content: "\f104";
+}
+.flaticon-cd:before {
+  content: "\f105";
+}
+.flaticon-console-panel:before {
+  content: "\f106";
+}
+.flaticon-drum:before {
+  content: "\f107";
+}
+.flaticon-drums:before {
+  content: "\f108";
+}
+.flaticon-drumsticks:before {
+  content: "\f109";
+}
+.flaticon-earphones:before {
+  content: "\f10a";
+}
+.flaticon-eject-button:before {
+  content: "\f10b";
+}
+.flaticon-electric-guitar:before {
+  content: "\f10c";
+}
+.flaticon-equalizer:before {
+  content: "\f10d";
+}
+.flaticon-fast-forward-button:before {
+  content: "\f10e";
+}
+.flaticon-gramophone:before {
+  content: "\f10f";
+}
+.flaticon-grand-piano:before {
+  content: "\f110";
+}
+.flaticon-headphones:before {
+  content: "\f111";
+}
+.flaticon-lyra:before {
+  content: "\f112";
+}
+.flaticon-mandolin:before {
+  content: "\f113";
+}
+.flaticon-maracas:before {
+  content: "\f114";
+}
+.flaticon-megaphone:before {
+  content: "\f115";
+}
+.flaticon-metronome:before {
+  content: "\f116";
+}
+.flaticon-microphone:before {
+  content: "\f117";
+}
+.flaticon-microphone-1:before {
+  content: "\f118";
+}
+.flaticon-microphone-2:before {
+  content: "\f119";
+}
+.flaticon-mp3-player:before {
+  content: "\f11a";
+}
+.flaticon-music-file:before {
+  content: "\f11b";
+}
+.flaticon-music-folder:before {
+  content: "\f11c";
+}
+.flaticon-musical-note:before {
+  content: "\f11d";
+}
+.flaticon-musical-note-1:before {
+  content: "\f11e";
+}
+.flaticon-mute:before {
+  content: "\f11f";
+}
+.flaticon-no-sound:before {
+  content: "\f120";
+}
+.flaticon-pause-button:before {
+  content: "\f121";
+}
+.flaticon-piano-keys:before {
+  content: "\f122";
+}
+.flaticon-play-button:before {
+  content: "\f123";
+}
+.flaticon-radio:before {
+  content: "\f124";
+}
+.flaticon-sound-frecuency:before {
+  content: "\f125";
+}
+.flaticon-speaker:before {
+  content: "\f126";
+}
+.flaticon-speaker-1:before {
+  content: "\f127";
+}
+.flaticon-speaker-with-waves:before {
+  content: "\f128";
+}
+.flaticon-triangle:before {
+  content: "\f129";
+}
+.flaticon-trumpet:before {
+  content: "\f12a";
+}
+.flaticon-tuning-fork:before {
+  content: "\f12b";
+}
+.flaticon-vdeo-cmera:before {
+  content: "\f12c";
+}
+.flaticon-video-camera:before {
+  content: "\f12d";
+}
+.flaticon-video-player:before {
+  content: "\f12e";
+}
+.flaticon-violin:before {
+  content: "\f12f";
+}
+.flaticon-xylophone:before {
+  content: "\f130";
+}
 h1,
 h2,
 h3,
@@ -3118,7 +3287,15 @@ fieldset[disabled] a.btn {
   width: 30px;
   height: 30px;
   font-size: 12px;
-  padding: 2px 2px 2px 0px;
+  padding: 0px 2px 2px 0px;
+}
+.btn.btn-border.btn-circle.btn-play.icon {
+  font-family: "Flaticon";
+  padding: 0px;
+}
+.btn.btn-border.btn-circle.btn-play.icon.flaticon-play-button,
+.btn.btn-border.btn-circle.btn-play.icon.flaticon-metronome {
+  padding: 0px 0px 0px 2px;
 }
 .btn.btn-border.btn-circle.btn-play:hover,
 .btn.btn-border.btn-circle.btn-play:focus,
@@ -5103,8 +5280,8 @@ a.badge:focus {
   background-color: #181923;
 }
 .jumbotron.large {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 5px*20;
+  padding-bottom: 5px*20;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -5139,7 +5316,7 @@ a.badge:focus {
   }
   .jumbotron h1,
   .jumbotron .h1 {
-    font-size: 30px;
+    font-size: 15px*2;
   }
 }
 .jumbotron.producer {
@@ -5253,21 +5430,37 @@ a.badge:focus {
   opacity: 1;
 }
 .jumbotron table.table-hover {
+  border: 0px;
   background-color: #181923;
 }
 .jumbotron table.table-hover td {
+  border: 0px;
   font-family: Mohave;
-  width: 25%;
-  font-size: 20px;
+  font-size: 16px;
   vertical-align: middle;
+}
+.jumbotron table.table-hover td.width-50 {
+  width: 50px;
+}
+.jumbotron table.table-hover td:last-child {
+  text-align: right;
 }
 .jumbotron.ad {
   padding: 10px 15px;
 }
+.jumbotron.ad table {
+  border: 0px;
+}
 .jumbotron.ad table td {
+  background-color: #181923;
   font-family: Mohave;
   font-size: 14px;
   vertical-align: middle;
+  border: 0px;
+  width: auto;
+}
+.jumbotron.ad table td.width-50 {
+  width: 50px;
 }
 .jumbotron.ad h1,
 .jumbotron.ad h2,
@@ -5282,6 +5475,26 @@ a.badge:focus {
   font-size: 40px;
   text-transform: uppercase;
   font-family: Kulag-Regular;
+}
+.jumbotron.ad .gradient-before,
+.jumbotron.ad .gradient-after,
+.jumbotron.ad .pre-gradient-before,
+.jumbotron.ad .pre-gradient-after {
+  transition: all 0.2s ease-in-out;
+  transition-delay: 0s;
+  visibility: hidden;
+  opacity: 0;
+}
+.jumbotron.ad:hover {
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+.jumbotron.ad:hover .gradient-before,
+.jumbotron.ad:hover .gradient-after,
+.jumbotron.ad:hover .pre-gradient-before,
+.jumbotron.ad:hover .pre-gradient-after {
+  visibility: visible;
+  opacity: 1;
 }
 .thumbnail {
   position: relative;
@@ -7074,6 +7287,12 @@ button.close {
   display: inline-block;
   width: 100%;
   height: auto;
+}
+.w-100 {
+  width: 100% !important;
+}
+.b-0 {
+  border: 0px;
 }
 @-ms-viewport {
   width: device-width;

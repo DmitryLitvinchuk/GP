@@ -158,22 +158,37 @@
 		}*/
 	}
 	table.table-hover {
+		border: 0px;
 		background-color: @jumbotron-bg;
 		td {
+			border: 0px;
 			font-family: Mohave;
-			width: 25%;
-			font-size: 20px;
+			//width: 25%;
+			font-size: 16px;
 			vertical-align: middle;
+			&.width-50 {
+				width: 50px;
+			}
+			&:last-child {
+				text-align: right;
+			}
 		}
 	}
 	&.ad {
 		//margin: 15px;
 		padding: 10px 15px;
 		table {
+			border: 0px;
 			td {
+			background-color: @brand-primary;
 			font-family: Mohave;
 			font-size: 14px;
 			vertical-align: middle;
+			border: 0px;
+			width: auto;
+				&.width-50 {
+					width: 50px;
+				}
 			}
 		}
 		h1, h2, h3, h4, h5, h6 {
@@ -184,6 +199,20 @@
 			font-size: 40px;
 			text-transform: uppercase;
 			font-family: Kulag-Regular;
+		}
+		.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
+			transition: all .2s ease-in-out;
+			transition-delay: 0s;
+			visibility: hidden;
+			opacity: 0;
+		}
+		&:hover {
+			transition: all .2s ease-in-out;
+			opacity: 1;
+			.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
+				visibility: visible;
+				opacity: 1;
+			}
 		}
 	}
 }
