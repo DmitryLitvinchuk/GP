@@ -1,0 +1,43 @@
+label[class="checkbox"], label[class="radio"] {
+    padding-left: 25px;
+    input {
+        display: none;
+    }
+    .icons {
+        font-family: "ghost-production";
+        display: block;
+        position: absolute;
+        height: 20px;
+        top: 0;
+        left: 0;
+        width: 20px;
+        text-align: center;
+        line-height: 26px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+label[class="checkbox"] {
+    .icons > span {
+        display: inline-table;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: transparent;
+        margin: 0;
+        opacity: 1;
+        -webkit-filter: none;
+        filter: none;
+        -webkit-transition: color .25s linear;
+        transition: color .25s linear;
+        
+        &.checkbox-unchecked:before {
+            content: "\62";
+        }
+        &.checkbox-checked:before {
+            content: "\61";
+        }
+        
+    }
+}
