@@ -7525,6 +7525,9 @@ button.close {
 .text-green {
   color: #2ecc71;
 }
+.text-gray {
+  color: #838389;
+}
 .text-normal {
   font-style: normal !important;
 }
