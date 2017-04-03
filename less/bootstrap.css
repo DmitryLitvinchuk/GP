@@ -3311,6 +3311,13 @@ fieldset[disabled] a.btn {
 .btn.btn-border.btn-circle.btn-play.icon2.flaticon-avatar {
   padding: 0px 0px 0px 2px;
 }
+.btn.btn-border.btn-circle.btn-play.btn-play-text-normal {
+  font-style: normal;
+  font-size: 16px;
+  padding-top: 3px;
+  padding-left: 2px;
+  font-family: Roboto-Light;
+}
 .btn.btn-border.btn-circle.btn-play:hover,
 .btn.btn-border.btn-circle.btn-play:focus,
 .btn.btn-border.btn-circle.btn-play.focus {
@@ -7517,6 +7524,9 @@ button.close {
 }
 .text-green {
   color: #2ecc71;
+}
+.text-normal {
+  font-style: normal !important;
 }
 @-ms-viewport {
   width: device-width;
