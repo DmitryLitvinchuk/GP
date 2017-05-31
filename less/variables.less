@@ -243,7 +243,7 @@
 //## Dropdown menu container and contents.
 
 //** Background for the dropdown menu.
-@dropdown-bg:                    @brand-primary;
+@dropdown-bg:                    darken(@brand-primary,5%);
 //** Dropdown menu `border-color`.
 @dropdown-border:                fade(@brand-primary, 15%);
 //** Dropdown menu `border-color` **for IE8**.
@@ -402,13 +402,13 @@
 //=== Inverted navbar
 // Reset inverted navbar basics
 @navbar-inverse-color:                      @white-base;
-@navbar-inverse-bg:                         @brand-primary;
-@navbar-inverse-border:                     @navbar-inverse-bg;
+@navbar-inverse-bg:                         darken(@brand-primary,2%);
+@navbar-inverse-border:                     transparent;
 
 // Inverted navbar links
 @navbar-inverse-link-color:                 @white-base;
 @navbar-inverse-link-hover-color:           @brand-danger;
-@navbar-inverse-link-hover-bg:              lighten(@second-brand-primary, 5%);
+@navbar-inverse-link-hover-bg:              darken(@second-brand-primary, 5%);
 @navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
 @navbar-inverse-link-active-bg:             @navbar-inverse-link-hover-bg;
 @navbar-inverse-link-disabled-color:        #444;

@@ -12,7 +12,7 @@
   position: relative;
   min-height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: @navbar-margin-bottom;
-  border: 1px solid transparent;
+  border: none/*1px solid transparent*/;
 
   // Prevent floats from breaking the navbar
   &:extend(.clearfix all);
@@ -233,6 +233,9 @@
   margin: (@navbar-padding-vertical / 2) -@navbar-padding-horizontal;
 
   > li > a {
+	font-family: Roboto-Light-Italic;
+	text-transform: uppercase;
+	letter-spacing: -1px;
     padding-top:    10px;
     padding-bottom: 10px;
     line-height: @line-height-computed;
@@ -270,7 +273,7 @@
     > li {
       float: left;
       > a {
-        padding-top:    @navbar-padding-vertical;
+        padding-top:    18px;
         padding-bottom: @navbar-padding-vertical;
       }
     }

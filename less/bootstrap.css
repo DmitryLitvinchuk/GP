@@ -1200,6 +1200,27 @@ hr {
   /* Путь к файлу со шрифтом */
 }
 @font-face {
+  font-family: Roboto-Bold-Italic;
+  src: url(../fonts/Roboto/Roboto-BoldItalic.ttf);
+  
+  /* Имя шрифта */
+  /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: Roboto-Thin-Italic;
+  src: url(../fonts/Roboto/Roboto-ThinItalic.ttf);
+  
+  /* Имя шрифта */
+  /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: Roboto-Light-Italic;
+  src: url(../fonts/Roboto/Roboto-LightItalic.ttf);
+  
+  /* Имя шрифта */
+  /* Путь к файлу со шрифтом */
+}
+@font-face {
   font-family: Kulag-Regular;
   src: url(../fonts/Kulag/KULAG-Regular.otf);
   
@@ -3214,6 +3235,8 @@ select[multiple].input-lg {
   }
 }
 .btn {
+  font-family: Roboto-Light;
+  text-transform: uppercase;
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -3860,7 +3883,7 @@ tbody.collapse.in {
   list-style: none;
   font-size: 15px;
   text-align: left;
-  background-color: #181923;
+  background-color: #0e0e14;
   border: 1px solid #cccccc;
   border: 1px solid rgba(24, 25, 35, 0.15);
   border-radius: 20px;
@@ -3879,6 +3902,8 @@ tbody.collapse.in {
   background-color: #cccccc;
 }
 .dropdown-menu > li > a {
+  font-family: Roboto-Light-Italic;
+  text-transform: uppercase;
   display: block;
   padding: 3px 20px;
   clear: both;
@@ -4514,7 +4539,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: relative;
   min-height: 50px;
   margin-bottom: 21px;
-  border: 1px solid transparent;
+  border: none /*1px solid transparent*/;
 }
 @media (min-width: 768px) {
   .navbar {
@@ -4669,6 +4694,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin: 7.25px -15px;
 }
 .navbar-nav > li > a {
+  font-family: Roboto-Light-Italic;
+  text-transform: uppercase;
+  letter-spacing: -1px;
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 21px;
@@ -4704,7 +4732,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 14.5px;
+    padding-top: 18px;
     padding-bottom: 14.5px;
   }
 }
@@ -4933,8 +4961,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #cccccc;
 }
 .navbar-inverse {
-  background-color: #181923;
-  border-color: #181923;
+  background-color: #14151d;
+  border-color: transparent;
 }
 .navbar-inverse .navbar-brand {
   color: #ffffff;
@@ -4953,13 +4981,13 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
   color: #cc29a6;
-  background-color: #1f2232;
+  background-color: #0b0c12;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #cc29a6;
-  background-color: #1f2232;
+  background-color: #0b0c12;
 }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
@@ -4979,20 +5007,20 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
-  border-color: #090a0e;
+  border-color: #050608;
 }
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
-  background-color: #1f2232;
+  background-color: #0b0c12;
   color: #cc29a6;
 }
 @media (max-width: 767px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
-    border-color: #181923;
+    border-color: transparent;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
-    background-color: #181923;
+    background-color: transparent;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: #ffffff;
@@ -5000,13 +5028,13 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #cc29a6;
-    background-color: #1f2232;
+    background-color: #0b0c12;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #cc29a6;
-    background-color: #1f2232;
+    background-color: #0b0c12;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -7542,6 +7570,17 @@ button.close {
 }
 .text-normal {
   font-style: normal !important;
+}
+.logo-firstpart {
+  font-family: Roboto-Bold-Italic;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  margin-right: -3px;
+}
+.logo-secondpart {
+  font-family: Roboto-Thin-Italic;
+  text-transform: uppercase;
+  letter-spacing: -2px;
 }
 @-ms-viewport {
   width: device-width;
