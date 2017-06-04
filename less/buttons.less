@@ -193,8 +193,17 @@
 		  transition: background-image 2s ease-in-out;
 	  }
 }
-.btn-primary {
+.btn-primary { 
   .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
+	background-image: linear-gradient(0deg, @btn-primary-bg, @btn-primary-bg);
+	  &:hover,
+	  &:focus,
+	  &.focus {
+		/*background-color: @btn-danger-bg;*/
+		  background-image: linear-gradient(0deg, @brand-danger, @brand-pink);
+		  border-color: @brand-pink;
+		  transition: background-image 2s ease-in-out;
+	  }
 }
 // Success appears as green
 .btn-success {

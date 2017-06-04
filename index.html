@@ -41,7 +41,7 @@
 				<div class="form-group">
 				  <input type="text" class="form-control" placeholder="Search">
 				</div>
-				<button type="submit" class="btn btn-sm btn-default">Submit</button>
+				<button type="submit" class="btn btn-sm btn-primary primary-darken">Submit</button>
 			  </form>
             </li>
             
@@ -72,9 +72,12 @@
       		<div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
        			<div class="jumbotron register">
 					<div class="caption">
-						<h2 class="text-center mt-0">register</h2>
+						<h2 class="text-center mt-0">
+							<span class="logo-firstpart">regist</span>
+							<span class="logo-secondpart">er</span>
+			  			</h2>
 						<form class="form-horizontal">
-							<div class="form-group">
+							<div class="form-group form-group-vertical">
 								<div class="row">
 								 <div class="col-xs-offset-3 col-xs-6 ">
 									<div class="btn-group btn-group-justified" data-toggle="buttons">
@@ -88,32 +91,40 @@
 								 </div>
 								</div>
 								
-								<label class="col-sm-offset-1 col-sm-2 control-label" for="email-input">
-									email
-								</label>
-								<div class="col-sm-8">
+								<div class="col-xs-12 col-sm-offset-1 col-sm-10">
+									<label class="control-label" for="email-input">
+										email
+									</label>
+								</div>
+								<div class="col-xs-12 col-sm-offset-1 col-sm-10">
 									<input class="form-control" id="email-input" type="text" placeholder="Email">
 								</div>
-								<label class="col-sm-offset-1 col-sm-2 control-label" for="name-input">
-									name
-								</label>
-								<div class="col-sm-8">
+								<div class="col-xs-12 col-sm-offset-1 col-sm-10">
+									<label class="control-label" for="name-input">
+										name
+									</label>
+								</div>
+								<div class="col-xs-12 col-sm-offset-1 col-sm-10">
 									<input class="form-control" id="name-input" type="text" placeholder="Name">
 								</div>
-								<label class="col-sm-offset-1 col-sm-2 control-label" for="password-input">
-									Password
-								</label>
-								<div class="col-sm-8">
+								<div class="col-xs-12 col-sm-offset-1 col-sm-10">
+									<label class="control-label" for="password-input">
+										password
+									</label>
+								</div>
+								<div class="col-xs-12 col-sm-offset-1 col-sm-10">
 									<input class="form-control" id="password-input" type="password" placeholder="Password">
 								</div>
-								<label class="col-sm-offset-1 col-sm-2 control-label" for="repeat-password-input">
-									Repeat
-								</label>
-								<div class="col-sm-8">
+								<div class="col-xs-12 col-sm-offset-1 col-sm-10">
+									<label class="control-label" for="repeat-password-input">
+										password
+									</label>
+								</div>
+								<div class="col-xs-12 col-sm-offset-1 col-sm-10 mb-10">
 									<input class="form-control" id="repeat-password-input" type="password" placeholder="Password">
 								</div>
-								<div class="col-xs-offset-9 col-xs-3 col-sm-offset-8 col-sm-3">
-                                	<button class="btn btn-default inline-block" type="submit">Register</button>
+								<div class="col-xs-offset-4 col-xs-4 col-sm-offset-4 col-sm-4 text-center">
+                                	<button class="btn btn-primary inline-block mt-20" type="submit">Register</button>
                             	</div>
 							</div>
 						</form>
@@ -123,23 +134,35 @@
        		<div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
        			<div class="jumbotron register">
 					<div class="caption">
-						<h2 class="text-center mt-0">login</h2>
+						<h2 class="text-center mt-0">
+							<span class="logo-firstpart">log</span>
+							<span class="logo-secondpart">in</span>
+						</h2>
 						<form class="form-horizontal">
-							<div class="form-group">
-								<label class="col-sm-offset-1 col-sm-2 control-label" for="login-input">
-									Login
-								</label>
-								<div class="col-sm-8">
-									<input class="form-control" id="login-input" type="text" placeholder="Email or name">
+							<div class="form-group form-group-vertical">
+								<div class="col-xs-12 col-sm-offset-1 col-sm-10">
+									<label class="control-label" for="login-email-input">
+										name / email
+									</label>
 								</div>
-								<label class="col-sm-offset-1 col-sm-2 control-label" for="password-input">
-									Password
-								</label>
-								<div class="col-sm-8">
-									<input class="form-control" id="password-input" type="password" placeholder="Password">
+								<div class="col-xs-12 col-sm-offset-1 col-sm-10">
+									<input class="form-control" id="login-email-input" type="text" placeholder="Name / Email">
 								</div>
-								<div class="col-xs-offset-9 col-xs-3 col-sm-offset-8 col-sm-3">
-                                	<button class="btn btn-default inline-block" type="submit">Login</button>
+								<div class="col-xs-12 col-sm-offset-1 col-sm-10">
+									<label class="control-label" for="login-password-input">
+										password
+									</label>
+								</div>
+								<div class="col-xs-12 col-sm-offset-1 col-sm-10">
+									<input class="form-control" id="login-password-input" type="password" placeholder="Password">
+								</div>
+								<div class="col-xs-12 col-sm-offset-1 col-sm-10 text-center">
+									<h6 class="mt-5 mb-0 text-right">
+										<small><a href="#">forgot password?</a></small>
+									</h6>
+								</div>
+								<div class="col-xs-offset-4 col-xs-4 col-sm-offset-4 col-sm-4 text-center">
+                                	<button class="btn btn-primary inline-block mt-5" type="submit">login</button>
                             	</div>
 							</div>
 						</form>
@@ -183,7 +206,7 @@
 										<div class="panel-heading">
 											<h4 class="panel-title">
 											  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#">
-												details
+												<span class="logo-firstpart">details</span>
 											  </a>
 											</h4>
 										 </div>
@@ -224,8 +247,7 @@
 								<div class="row">
 									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<h4 class="process-name">
-											PROCESS 
-											<button class="btn btn-border btn-xs btn-buy pull-right" href="#">STOP WORKING</button>
+											<span class="logo-firstpart">process</span>
 										</h4>
 										<table class="table table-responsive mb-0 text-center">
 										  <tbody>
@@ -359,7 +381,8 @@
 								<div class="row">
 									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<h4 class="process-name">
-											PROCESS
+											<span class="logo-firstpart">pro</span>
+											<span class="logo-secondpart">cess</span>
 										</h4>
 										<table class="table table-responsive mb-0 text-center">
 										  <tbody>
@@ -662,7 +685,7 @@
 						  <button class="btn btn-border btn-circle btn-works" type="button"><h4>9999</h4><p>sells</p></button>
 						  <button class="btn btn-border btn-circle btn-works btn-works-releases" type="button"><h4>9999</h4><p>releases</p></button>
 						</div>
-						<h3 class="producer-info">genre: <small>progressive house, tech house, deep house</small></h3>
+						<h3 class="producer-info">genres: <small>progressive house, tech house, deep house</small></h3>
 						<h3 class="producer-info">projects: <small>tracks, remixes, mastering</small></h3>
 						<h3 class="producer-info">time: <small>15-30 days</small></h3>
 						<h3 class="producer-info">average price: <small>350$</small></h3>

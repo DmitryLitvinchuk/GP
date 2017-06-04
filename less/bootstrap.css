@@ -1075,7 +1075,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: Mohave, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Roboto-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 1.42857143;
   color: #ffffff;
@@ -1419,6 +1419,7 @@ h6,
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
+  text-transform: uppercase;
 }
 h1 small,
 h2 small,
@@ -1470,6 +1471,19 @@ h2 .small,
 h3 .small,
 .h3 .small {
   font-size: 65%;
+}
+h2 .logo-firstpart,
+.h2 .logo-firstpart {
+  font-family: Roboto-Bold-Italic;
+  text-transform: uppercase;
+  letter-spacing: -4px;
+  margin-right: -7px;
+}
+h2 .logo-secondpart,
+.h2 .logo-secondpart {
+  font-family: Roboto-Thin-Italic;
+  text-transform: uppercase;
+  letter-spacing: -4px;
 }
 h4,
 .h4,
@@ -2491,6 +2505,7 @@ th {
   text-align: left;
 }
 .table {
+  text-transform: uppercase;
   width: 100%;
   max-width: 100%;
   margin-bottom: 21px;
@@ -2740,6 +2755,7 @@ legend {
   border-bottom: 1px solid #cccccc;
 }
 label {
+  text-transform: uppercase;
   display: inline-block;
   max-width: 100%;
   margin-bottom: 5px;
@@ -3216,21 +3232,25 @@ select[multiple].input-lg {
   .form-horizontal .control-label {
     text-align: right;
     margin-bottom: 0;
-    padding-top: 7px;
+    padding-top: 11px;
   }
+}
+.form-horizontal .control-label {
+  margin-bottom: 0;
+  padding-top: 8px;
 }
 .form-horizontal .has-feedback .form-control-feedback {
   right: 15px;
 }
 @media (min-width: 768px) {
   .form-horizontal .form-group-lg .control-label {
-    padding-top: 11px;
+    padding-top: 15px;
     font-size: 19px;
   }
 }
 @media (min-width: 768px) {
   .form-horizontal .form-group-sm .control-label {
-    padding-top: 6px;
+    padding-top: 10px;
     font-size: 13px;
   }
 }
@@ -3472,7 +3492,8 @@ fieldset[disabled] .btn-default.focus {
 .btn-primary {
   color: #ffffff;
   background-color: #181923;
-  border-color: #0e0e14;
+  border-color: #181923;
+  background-image: linear-gradient(0deg, #181923, #181923);
 }
 .btn-primary:focus,
 .btn-primary.focus {
@@ -3520,11 +3541,19 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus {
   background-color: #181923;
-  border-color: #0e0e14;
+  border-color: #181923;
 }
 .btn-primary .badge {
   color: #181923;
   background-color: #ffffff;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus {
+  /*background-color: @btn-danger-bg;*/
+  background-image: linear-gradient(0deg, #cc29a6, #8963f6);
+  border-color: #8963f6;
+  transition: background-image 2s ease-in-out;
 }
 .btn-success {
   color: #ffffff;
@@ -5220,6 +5249,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   cursor: not-allowed;
 }
 .label {
+  text-transform: uppercase;
   display: inline;
   padding: .2em .6em .3em;
   font-size: 75%;
@@ -5416,7 +5446,7 @@ a.badge:focus {
   position: absolute;
   bottom: -6px;
   right: 7px;
-  font-family: Mohave;
+  font-family: Mohave !important;
   font-style: italic;
   font-size: 50px;
   text-transform: uppercase;
@@ -5429,6 +5459,7 @@ a.badge:focus {
   z-index: 50;
   margin: 0;
   opacity: 0.9;
+  font-family: Mohave !important;
   padding: 35px;
   color: #cccccc;
 }
@@ -5558,14 +5589,14 @@ a.badge:focus {
   font-weight: bold;
 }
 .jumbotron.producer .caption h3.producer-info {
-  font-family: Mohave;
+  font-family: Roboto-Light;
   font-style: normal;
-  font-size: 20px;
+  font-size: 16px;
   margin: 5px 0px;
 }
 .jumbotron.producer .caption h3.producer-info small {
   font-style: italic;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
 }
 .jumbotron.producer .caption h3.producer-info:last-child {
@@ -5600,8 +5631,7 @@ a.badge:focus {
 }
 .jumbotron table.table-hover td {
   border: 0px;
-  font-family: Mohave;
-  font-size: 16px;
+  font-size: 14px;
   vertical-align: middle;
 }
 .jumbotron table.table-hover td.width-50 {
@@ -5618,10 +5648,9 @@ a.badge:focus {
 }
 .jumbotron.ad table td {
   background-color: #181923;
-  font-family: Mohave;
   font-size: 14px;
   vertical-align: middle;
-  border: 0px;
+  border: 0px !important;
   width: auto;
 }
 .jumbotron.ad table td.width-50 {
@@ -5640,6 +5669,27 @@ a.badge:focus {
   font-size: 40px;
   text-transform: uppercase;
   font-family: Kulag-Regular;
+}
+.jumbotron.ad h4.process-name {
+  margin: 0px;
+  padding: 5px 15px;
+  font-size: 20px;
+}
+.jumbotron.ad h4.process-name .logo-firstpart {
+  letter-spacing: -2px;
+  margin-right: -5px;
+}
+.jumbotron.ad h4.process-name .logo-secondpart {
+  letter-spacing: -2px;
+}
+.jumbotron.ad h4.panel-title .logo-firstpart {
+  font-size: 20px;
+  letter-spacing: -2px;
+  margin-right: -2px;
+}
+.jumbotron.ad h4.panel-title .logo-secondpart {
+  font-size: 20px;
+  letter-spacing: -2px;
 }
 .jumbotron.ad .up {
   transition: all 0.3s ease-in-out;
@@ -5679,14 +5729,6 @@ a.badge:focus {
   transition: all 0.3s ease-in-out;
   opacity: 1;
 }
-.jumbotron.ad.ad-details-visible h4.process-name {
-  margin: 0px;
-  padding: 5px 15px;
-  font-family: Mohave;
-  font-style: italic;
-  font-size: 20px;
-  font-weight: bold;
-}
 .jumbotron.ad .gradient-before,
 .jumbotron.ad .gradient-after,
 .jumbotron.ad .pre-gradient-before,
@@ -5717,14 +5759,15 @@ a.badge:focus {
   visibility: visible;
   opacity: 1;
 }
-.jumbotron.register .control-label {
-  padding-left: 28px;
+.jumbotron .form-group-vertical .control-label {
+  /*padding-left: 0px;
+			margin-left: 14px;*/
 }
-.jumbotron.register .form-control {
-  margin-bottom: 5px;
+.jumbotron .form-group-vertical .form-control {
+  margin-bottom: 0px;
 }
-.jumbotron.register .btn-group {
-  margin-bottom: 5px;
+.jumbotron .form-group-vertical .btn-group {
+  margin-bottom: 0px;
 }
 .thumbnail {
   position: relative;
@@ -6945,7 +6988,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: Mohave, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Roboto-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7063,7 +7106,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: Mohave, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Roboto-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7553,6 +7596,15 @@ button.close {
 .mt-0 {
   margin-top: 0px;
 }
+.mt-5 {
+  margin-top: 5px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mb-5 {
+  margin-bottom: 5px;
+}
 .b-0 {
   border: 0px;
 }
@@ -7581,6 +7633,20 @@ button.close {
   font-family: Roboto-Thin-Italic;
   text-transform: uppercase;
   letter-spacing: -2px;
+}
+.primary-darken {
+  border-color: #14151d;
+  background-image: linear-gradient(0deg, #14151d, #14151d);
+}
+.form-group-vertical .control-label {
+  padding-left: 0px;
+  margin-left: 14px;
+}
+.form-group-vertical .form-control {
+  margin-bottom: 5px;
+}
+.form-group-vertical .btn-group {
+  margin-bottom: 5px;
 }
 @-ms-viewport {
   width: device-width;

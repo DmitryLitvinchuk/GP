@@ -91,7 +91,7 @@
 				position: absolute;
 				bottom: -6px;
 				right: 7px;
-				font-family: Mohave;
+				font-family: Mohave !important;
 				font-style: italic;
 				font-size: 50px;
 				text-transform: uppercase;
@@ -104,6 +104,7 @@
 				z-index: 50;
 				margin: 0;
 				opacity: 0.9;
+				font-family: Mohave !important;
 				padding: 35px;
 				color: @white-dark;
 			}
@@ -197,13 +198,13 @@
 				font-weight: bold;
 			}
 			h3.producer-info {
-				font-family: Mohave;
+				font-family: Roboto-Light;
 				font-style: normal;
-				font-size: 20px;
+				font-size: 16px;
 				margin: 5px 0px;
 				small {
 					font-style: italic;
-					font-size: 20px;
+					font-size: 16px;
 					font-weight: bold;
 				}
 				&:last-child {
@@ -256,13 +257,13 @@
 		}*/
 	}
 	table.table-hover {
+		
 		border: 0px;
 		background-color: @jumbotron-bg;
 		td {
 			border: 0px;
-			font-family: Mohave;
 			//width: 25%;
-			font-size: 16px;
+			font-size: 14px;
 			vertical-align: middle;
 			&.width-50 {
 				width: 50px;
@@ -279,10 +280,9 @@
 			border: 0px;
 			td {
 			background-color: @brand-primary;
-			font-family: Mohave;
 			font-size: 14px;
 			vertical-align: middle;
-			border: 0px;
+			border: 0px !important;
 			width: auto;
 				&.width-50 {
 					width: 50px;
@@ -297,6 +297,29 @@
 			font-size: 40px;
 			text-transform: uppercase;
 			font-family: Kulag-Regular;
+		}
+		h4.process-name {
+			margin: 0px;
+			padding: 5px 15px;
+			font-size: 20px;
+			.logo-firstpart {
+				letter-spacing: -2px;
+				margin-right: -5px;
+			}
+			.logo-secondpart {
+				letter-spacing: -2px;
+			}
+		}
+		h4.panel-title {
+			.logo-firstpart {
+				font-size: 20px;
+				letter-spacing: -2px;
+				margin-right: -2px;
+			}
+			.logo-secondpart {
+				font-size: 20px;
+				letter-spacing: -2px;
+			}
 		}
 		.up {
 			transition: all .3s ease-in-out;
@@ -339,14 +362,6 @@
 				transition: all .3s ease-in-out;
 				opacity: 1;
 			}
-			h4.process-name {
-				margin: 0px;
-				padding: 5px 15px;
-				font-family: Mohave;
-				font-style: italic;
-				font-size: 20px;
-				font-weight: bold;
-			}
 		}
 		.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
 			transition: all .2s ease-in-out;
@@ -374,15 +389,17 @@
 		}
 	}
 	
-	&.register {
+	.form-group-vertical {
 		.control-label {
-			padding-left: 28px;
+			/*padding-left: 0px;
+			margin-left: 14px;*/
+			
 		}
 		.form-control {
-			margin-bottom: 5px;
+			margin-bottom: 0px;
 		}
 		.btn-group {
-			margin-bottom: 5px;
+			margin-bottom: 0px;
 		}
 	}
 }

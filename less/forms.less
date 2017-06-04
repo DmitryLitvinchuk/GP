@@ -30,6 +30,7 @@ legend {
 }
 
 label {
+  text-transform: uppercase;
   display: inline-block;
   max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
   margin-bottom: 5px;
@@ -578,10 +579,13 @@ input[type="checkbox"] {
     .control-label {
       text-align: right;
       margin-bottom: 0;
-      padding-top: (@padding-base-vertical + 1); // Default padding plus a border
+      padding-top: (@padding-base-vertical + 5); // Default padding plus a border
     }
   }
-
+	.control-label {
+      margin-bottom: 0;
+      padding-top: (@padding-base-vertical + 2); // Default padding plus a border
+    }
   // Validation states
   //
   // Reposition the icon because it's now within a grid column and columns have
@@ -597,7 +601,7 @@ input[type="checkbox"] {
   .form-group-lg {
     @media (min-width: @screen-sm-min) {
       .control-label {
-        padding-top: (@padding-large-vertical + 1);
+        padding-top: (@padding-large-vertical + 5);
         font-size: @font-size-large;
       }
     }
@@ -605,7 +609,7 @@ input[type="checkbox"] {
   .form-group-sm {
     @media (min-width: @screen-sm-min) {
       .control-label {
-        padding-top: (@padding-small-vertical + 1);
+        padding-top: (@padding-small-vertical + 5);
         font-size: @font-size-small;
       }
     }
