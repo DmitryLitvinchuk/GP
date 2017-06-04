@@ -1455,7 +1455,7 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 21px;
+  margin-top: 10.5px;
   margin-bottom: 10.5px;
 }
 h1 small,
@@ -3325,19 +3325,19 @@ fieldset[disabled] a.btn {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  font-family: Mohave;
-  font-style: italic;
+  font-family: Roboto-Light-Italic;
   font-size: 20px;
+  letter-spacing: -1px;
 }
 .btn.btn-border.btn-circle.btn-play {
-  font-size: 30px;
-  padding: 6px 12px 6px 6px;
+  font-size: 25px;
+  padding: 2px 2px 2px 0px;
 }
 .btn.btn-border.btn-circle.btn-play.btn-play-sm {
   width: 30px;
   height: 30px;
-  font-size: 12px;
-  padding: 0px 2px 2px 0px;
+  font-size: 10px;
+  padding: 2px;
 }
 .btn.btn-border.btn-circle.btn-play.icon {
   font-family: "Flaticon";
@@ -3358,7 +3358,7 @@ fieldset[disabled] a.btn {
   font-style: normal;
   font-size: 16px;
   padding-top: 3px;
-  padding-left: 2px;
+  padding-left: 1px;
   font-family: Roboto-Light;
 }
 .btn.btn-border.btn-circle.btn-play:hover,
@@ -3370,22 +3370,22 @@ fieldset[disabled] a.btn {
 .btn.btn-border.btn-circle.btn-like {
   width: 50px;
   height: 50px;
-  font-size: 21px;
-  padding: 6px 4px 6px 0px;
+  font-size: 18px;
+  padding: 6px 4px 4px;
 }
 .btn.btn-border.btn-circle.btn-like.btn-like-sm {
   width: 30px;
   height: 30px;
-  font-size: 12px;
-  padding: 2px 2px 2px 0px;
+  font-size: 10px;
+  padding: 2px;
 }
 .btn.btn-border.btn-circle.btn-works {
-  padding: 0px 8px 6px 4px;
+  padding: 6px 4px 4px 2px;
   text-align: center;
 }
 .btn.btn-border.btn-circle.btn-works h4 {
   margin: 0;
-  margin-bottom: 4px;
+  margin-bottom: 0px;
   font-size: 24px;
 }
 .btn.btn-border.btn-circle.btn-works p {
@@ -5366,7 +5366,7 @@ a.badge:focus {
   position: relative;
   padding-top: 5px;
   padding-bottom: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10.5px;
   color: inherit;
   background-color: #181923;
 }
@@ -5429,11 +5429,12 @@ a.badge:focus {
   display: inline-block;
   width: 30%;
   position: absolute;
-  top: -10px;
-  left: 5px;
-  font-family: Kulag-Regular;
-  font-size: 140px;
-  line-height: 90px;
+  top: -4px;
+  left: 0px;
+  font-family: Roboto-Bold-Italic;
+  font-size: 120px;
+  line-height: 95px;
+  letter-spacing: -12px;
   text-transform: uppercase;
   color: #050611;
   opacity: 1;
@@ -5444,14 +5445,22 @@ a.badge:focus {
   display: inline-block;
   width: auto;
   position: absolute;
-  bottom: -6px;
-  right: 7px;
-  font-family: Mohave !important;
-  font-style: italic;
-  font-size: 50px;
-  text-transform: uppercase;
+  bottom: -9px;
+  right: 2px;
+  font-size: 45px;
+  /*font-family: Mohave !important;
+				font-style: italic;
+				font-size: 50px;
+				text-transform: uppercase;*/
   color: #050611;
   opacity: 1;
+}
+.jumbotron.news .caption h2.author .logo-firstpart {
+  letter-spacing: -5px;
+  margin-right: -10px;
+}
+.jumbotron.news .caption h2.author .logo-secondpart {
+  letter-spacing: -5px;
 }
 .jumbotron.news .caption h3.text {
   transition: all 0.2s ease-in-out;
@@ -5459,8 +5468,9 @@ a.badge:focus {
   z-index: 50;
   margin: 0;
   opacity: 0.9;
-  font-family: Mohave !important;
-  padding: 35px;
+  font-family: Roboto-Light-Italic;
+  letter-spacing: -2px;
+  padding: 30px;
   color: #cccccc;
 }
 .jumbotron.news .gradient-before,
@@ -5502,7 +5512,7 @@ a.badge:focus {
 }
 .jumbotron.news:hover h1.title {
   transition: all 0.2s ease-in-out;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 .jumbotron.news:hover h3.text {
   transition: all 0.2s ease-in-out;
@@ -5564,40 +5574,56 @@ a.badge:focus {
 .jumbotron.producer .caption h6.city,
 .jumbotron.producer .caption h5.country {
   display: inline-block;
-  text-transform: uppercase;
   width: auto;
-  font-family: Mohave;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 65px;
+  font-size: 55px;
   margin: 0px 0px 10px;
   vertical-align: top;
+}
+.jumbotron.producer .caption h1.producer-name .logo-firstpart,
+.jumbotron.producer .caption h2.type .logo-firstpart,
+.jumbotron.producer .caption h6.city .logo-firstpart,
+.jumbotron.producer .caption h5.country .logo-firstpart {
+  letter-spacing: -7px;
+  margin-right: -5px;
+}
+.jumbotron.producer .caption h1.producer-name .logo-secondpart,
+.jumbotron.producer .caption h2.type .logo-secondpart,
+.jumbotron.producer .caption h6.city .logo-secondpart,
+.jumbotron.producer .caption h5.country .logo-secondpart {
+  letter-spacing: -7px;
 }
 .jumbotron.producer .caption h2.type {
   font-size: 35px;
 }
+.jumbotron.producer .caption h2.type .logo-firstpart {
+  letter-spacing: -4px;
+  margin-right: -5px;
+}
+.jumbotron.producer .caption h2.type .logo-secondpart {
+  letter-spacing: -3px;
+}
 .jumbotron.producer .caption h6.city,
 .jumbotron.producer .caption h5.country {
-  font-family: Mohave;
+  font-family: Roboto-Bold-Italic;
+  letter-spacing: -1px;
   margin-top: 9px;
   margin-left: 12px;
   font-size: 18px;
   font-weight: 100;
 }
 .jumbotron.producer .caption h5.country {
-  margin-left: 4px;
-  font-weight: bold;
+  font-family: Roboto-Light-Italic;
+  margin-left: -1px;
 }
 .jumbotron.producer .caption h3.producer-info {
-  font-family: Roboto-Light;
-  font-style: normal;
-  font-size: 16px;
+  font-family: Roboto-Bold-Italic;
+  letter-spacing: -1px;
+  font-size: 18px;
   margin: 5px 0px;
 }
 .jumbotron.producer .caption h3.producer-info small {
-  font-style: italic;
-  font-size: 16px;
-  font-weight: bold;
+  font-family: Roboto-Light-Italic;
+  font-size: 18px;
 }
 .jumbotron.producer .caption h3.producer-info:last-child {
   margin-bottom: 40px;
@@ -5665,10 +5691,16 @@ a.badge:focus {
   margin: 0;
 }
 .jumbotron.ad h2.type {
+  margin-top: 7px;
   margin-bottom: 5px;
-  font-size: 40px;
-  text-transform: uppercase;
-  font-family: Kulag-Regular;
+  font-size: 32px;
+}
+.jumbotron.ad h2.type .logo-firstpart {
+  letter-spacing: -2px;
+  margin-right: -5px;
+}
+.jumbotron.ad h2.type .logo-secondpart {
+  letter-spacing: -2px;
 }
 .jumbotron.ad h4.process-name {
   margin: 0px;
@@ -5876,13 +5908,13 @@ a.thumbnail.active {
 .thumbnail.track h3,
 .thumbnail.track h4 {
   margin: 0;
-  font-family: Mohave;
-  font-style: italic;
-  font-weight: bold;
+  font-family: Roboto-Bold-Italic;
+  letter-spacing: -2px;
 }
 .thumbnail.track h4.artist {
-  font-size: 16px;
-  font-weight: lighter;
+  font-size: 14px;
+  font-family: Roboto-Light-Italic;
+  letter-spacing: -1px;
 }
 .thumbnail.track .up {
   opacity: 0;
@@ -7600,19 +7632,22 @@ button.close {
   margin-top: 5px;
 }
 .mt-20 {
-  margin-top: 20px;
+  margin-top: 20px !important;
 }
 .mb-5 {
-  margin-bottom: 5px;
+  margin-bottom: 5px !important;
 }
 .b-0 {
-  border: 0px;
+  border: 0px !important;
 }
 .mb-0 {
-  margin-bottom: 0px;
+  margin-bottom: 0px !important;
+}
+.pl-0 {
+  padding-left: 0px !important;
 }
 .pr-3 {
-  padding-right: 3px;
+  padding-right: 3px !important;
 }
 .text-green {
   color: #2ecc71;
