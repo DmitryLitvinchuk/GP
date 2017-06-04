@@ -162,7 +162,7 @@
 
 .navbar-brand {
   float: left;
-  padding: @navbar-padding-vertical @navbar-padding-horizontal;
+  padding: 18px @navbar-padding-horizontal;
   font-size: @font-size-large;
   line-height: @line-height-computed;
   height: @navbar-height;
@@ -287,9 +287,10 @@
 // our navbars.
 
 .navbar-form {
-  margin-left: -@navbar-padding-horizontal;
-  margin-right: -@navbar-padding-horizontal;
+  margin-left: 0px/*-@navbar-padding-horizontal*/;
+  margin-right: 0px/*-@navbar-padding-horizontal*/;
   padding: 10px @navbar-padding-horizontal;
+  
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
   @shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1);
@@ -301,7 +302,6 @@
   .form-group {
     @media (max-width: @grid-float-breakpoint-max) {
       margin-bottom: 5px;
-
       &:last-child {
         margin-bottom: 0;
       }
@@ -315,6 +315,7 @@
   @media (min-width: @grid-float-breakpoint) {
     width: auto;
     border: 0;
+	margin-top: 10px;
     margin-left: 0;
     margin-right: 0;
     padding-top: 0;

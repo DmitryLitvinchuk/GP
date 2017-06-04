@@ -4,7 +4,7 @@
 
 
 .jumbotron {
-	position: relative;
+  position: relative;
   padding-top:    @jumbotron-padding;
   padding-bottom: @jumbotron-padding;
   margin-bottom: (@line-height-computed / 2);
@@ -120,12 +120,12 @@
 				color: @white-dark;
 			}
 		}
-		.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
+		/*.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
 			transition: all .2s ease-in-out;
 			transition-delay: 0s;
 			visibility: hidden;
 			opacity: 0;
-		}
+		}*/
 		.gradient-before {
 			width: 30px;
 			background-image: linear-gradient(45deg, @brand-info, @brand-pink);
@@ -161,10 +161,10 @@
 				transition: all .2s ease-in-out;
 				opacity: 1;
 			}
-			.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
+			/*.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
 				visibility: visible;
 				opacity: 1;
-			}
+			}*/
 		}
 	}
 	&.producer {
@@ -183,7 +183,7 @@
 			padding: 10px 15px;
 			vertical-align: top;
 			width: auto;
-			h1.producer-name, h2.type, h6.city, h5.country {
+			h1.producer-name, h2.type, h3.edit-button, h6.city, h5.country {
 				display: inline-block;
 				//text-transform: uppercase;
 				width: auto;
@@ -202,6 +202,7 @@
 				}
 			}
 			h2.type {
+				width: auto;
 				font-size: 35px;
 				.logo-firstpart {
 					letter-spacing: -4px;
@@ -215,7 +216,7 @@
 				font-family: Roboto-Bold-Italic;
 				letter-spacing: -1px;
 				margin-top: 9px;
-				margin-left: 12px;
+				margin-left: 4px;
 				font-size: 18px;
 				font-weight: 100;
 			}
@@ -241,19 +242,19 @@
 				margin: 0px 0px 20px;
 			}
 		}
-		.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
+		/*.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
 			transition: all .2s ease-in-out;
 			transition-delay: 0s;
 			visibility: hidden;
 			opacity: 0;
-		}
+		}*/
 		&:hover {
 			transition: all .2s ease-in-out;
 			opacity: 1;
-			.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
+			/*.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
 				visibility: visible;
 				opacity: 1;
-			}
+			}*/
 		}
 		/*&::before, &::after {
 			content: "";
@@ -395,12 +396,12 @@
 				opacity: 1;
 			}
 		}
-		.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
+		/*.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
 			transition: all .2s ease-in-out;
 			transition-delay: 0s;
 			visibility: hidden;
 			opacity: 0;
-		}
+		}*/
 		.gradient-before {
 			background-image: linear-gradient(45deg, @brand-success, @brand-warning);
 		}
@@ -414,10 +415,10 @@
 				transition: all .3s ease-in-out;
 				opacity: 1;
 			}
-			.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
+			/*.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
 				visibility: visible;
 				opacity: 1;
-			}
+			}*/
 		}
 	}
 	
@@ -432,6 +433,21 @@
 		}
 		.btn-group {
 			margin-bottom: 0px;
+		}
+	}
+	
+	.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
+		transition: all .2s ease-in-out;
+		transition-delay: 0s;
+		visibility: hidden;
+		opacity: 0;
+	}
+	&:hover {
+		transition: all .2s ease-in-out;
+		opacity: 1;
+		.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
+			visibility: visible;
+			opacity: 1;
 		}
 	}
 }

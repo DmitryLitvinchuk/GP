@@ -4,6 +4,42 @@
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+.img-profile {
+  display: inline-block;
+  width: 31px;
+  margin: 7px 0px 6px;
+}
+.img-background {
+  display: block;
+  height: 500px;
+  position: absolute;
+  width: 100%;
+  top: -10px;
+  background-image: url(../../images/tomorrowland.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /*&:after {
+		content: "";
+		display: block;
+		width: 300px;
+		height: 350px;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		background-color: aqua;
+	}*/
+}
+.img-gradient {
+  display: block;
+  width: 100%;
+  height: 501px;
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  background: transparent;
+  background-image: linear-gradient(180deg, rgba(5, 6, 17, 0.25) 0%, #050611 100%);
+}
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -3337,7 +3373,7 @@ fieldset[disabled] a.btn {
   width: 30px;
   height: 30px;
   font-size: 10px;
-  padding: 2px;
+  padding: 2px 2px 2px 1px;
 }
 .btn.btn-border.btn-circle.btn-play.icon {
   font-family: "Flaticon";
@@ -3384,6 +3420,7 @@ fieldset[disabled] a.btn {
   text-align: center;
 }
 .btn.btn-border.btn-circle.btn-works h4 {
+  font-family: Roboto-Light;
   margin: 0;
   margin-bottom: 0px;
   font-size: 24px;
@@ -3915,6 +3952,7 @@ tbody.collapse.in {
   background-color: #0e0e14;
   border: 1px solid #cccccc;
   border: 1px solid rgba(24, 25, 35, 0.15);
+  border-top: 0px;
   border-radius: 20px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
@@ -4672,7 +4710,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  padding: 14.5px 15px;
+  padding: 18px 15px;
   font-size: 19px;
   line-height: 21px;
   height: 50px;
@@ -4766,8 +4804,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-form {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: 0px /*-@navbar-padding-horizontal*/;
+  margin-right: 0px /*-@navbar-padding-horizontal*/;
   padding: 10px 15px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
@@ -4838,6 +4876,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-form {
     width: auto;
     border: 0;
+    margin-top: 10px;
     margin-left: 0;
     margin-right: 0;
     padding-top: 0;
@@ -5415,6 +5454,12 @@ a.badge:focus {
   opacity: 0.9;
   margin-bottom: 10px;
   padding: 0px;
+  /*.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
+			transition: all .2s ease-in-out;
+			transition-delay: 0s;
+			visibility: hidden;
+			opacity: 0;
+		}*/
 }
 .jumbotron.news .caption {
   position: relative;
@@ -5473,15 +5518,6 @@ a.badge:focus {
   padding: 30px;
   color: #cccccc;
 }
-.jumbotron.news .gradient-before,
-.jumbotron.news .gradient-after,
-.jumbotron.news .pre-gradient-before,
-.jumbotron.news .pre-gradient-after {
-  transition: all 0.2s ease-in-out;
-  transition-delay: 0s;
-  visibility: hidden;
-  opacity: 0;
-}
 .jumbotron.news .gradient-before {
   width: 30px;
   background-image: linear-gradient(45deg, #6fecf1, #8963f6);
@@ -5509,6 +5545,10 @@ a.badge:focus {
 .jumbotron.news:hover {
   transition: all 0.2s ease-in-out;
   opacity: 1;
+  /*.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
+				visibility: visible;
+				opacity: 1;
+			}*/
 }
 .jumbotron.news:hover h1.title {
   transition: all 0.2s ease-in-out;
@@ -5518,18 +5558,17 @@ a.badge:focus {
   transition: all 0.2s ease-in-out;
   opacity: 1;
 }
-.jumbotron.news:hover .gradient-before,
-.jumbotron.news:hover .gradient-after,
-.jumbotron.news:hover .pre-gradient-before,
-.jumbotron.news:hover .pre-gradient-after {
-  visibility: visible;
-  opacity: 1;
-}
 .jumbotron.producer {
   transition: all 0.2s ease-in-out;
   opacity: 0.9;
   margin-bottom: 10px;
   padding: 0px;
+  /*.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
+			transition: all .2s ease-in-out;
+			transition-delay: 0s;
+			visibility: hidden;
+			opacity: 0;
+		}*/
   /*&::before, &::after {
 			content: "";
 			display: none;
@@ -5571,6 +5610,7 @@ a.badge:focus {
 }
 .jumbotron.producer .caption h1.producer-name,
 .jumbotron.producer .caption h2.type,
+.jumbotron.producer .caption h3.edit-button,
 .jumbotron.producer .caption h6.city,
 .jumbotron.producer .caption h5.country {
   display: inline-block;
@@ -5581,6 +5621,7 @@ a.badge:focus {
 }
 .jumbotron.producer .caption h1.producer-name .logo-firstpart,
 .jumbotron.producer .caption h2.type .logo-firstpart,
+.jumbotron.producer .caption h3.edit-button .logo-firstpart,
 .jumbotron.producer .caption h6.city .logo-firstpart,
 .jumbotron.producer .caption h5.country .logo-firstpart {
   letter-spacing: -7px;
@@ -5588,11 +5629,13 @@ a.badge:focus {
 }
 .jumbotron.producer .caption h1.producer-name .logo-secondpart,
 .jumbotron.producer .caption h2.type .logo-secondpart,
+.jumbotron.producer .caption h3.edit-button .logo-secondpart,
 .jumbotron.producer .caption h6.city .logo-secondpart,
 .jumbotron.producer .caption h5.country .logo-secondpart {
   letter-spacing: -7px;
 }
 .jumbotron.producer .caption h2.type {
+  width: auto;
   font-size: 35px;
 }
 .jumbotron.producer .caption h2.type .logo-firstpart {
@@ -5607,7 +5650,7 @@ a.badge:focus {
   font-family: Roboto-Bold-Italic;
   letter-spacing: -1px;
   margin-top: 9px;
-  margin-left: 12px;
+  margin-left: 4px;
   font-size: 18px;
   font-weight: 100;
 }
@@ -5631,25 +5674,13 @@ a.badge:focus {
 .jumbotron.producer .caption .producer-buttons {
   margin: 0px 0px 20px;
 }
-.jumbotron.producer .gradient-before,
-.jumbotron.producer .gradient-after,
-.jumbotron.producer .pre-gradient-before,
-.jumbotron.producer .pre-gradient-after {
-  transition: all 0.2s ease-in-out;
-  transition-delay: 0s;
-  visibility: hidden;
-  opacity: 0;
-}
 .jumbotron.producer:hover {
   transition: all 0.2s ease-in-out;
   opacity: 1;
-}
-.jumbotron.producer:hover .gradient-before,
-.jumbotron.producer:hover .gradient-after,
-.jumbotron.producer:hover .pre-gradient-before,
-.jumbotron.producer:hover .pre-gradient-after {
-  visibility: visible;
-  opacity: 1;
+  /*.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
+				visibility: visible;
+				opacity: 1;
+			}*/
 }
 .jumbotron table.table-hover {
   border: 0px;
@@ -5668,6 +5699,12 @@ a.badge:focus {
 }
 .jumbotron.ad {
   padding: 10px 15px;
+  /*.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
+			transition: all .2s ease-in-out;
+			transition-delay: 0s;
+			visibility: hidden;
+			opacity: 0;
+		}*/
 }
 .jumbotron.ad table {
   border: 0px;
@@ -5761,15 +5798,6 @@ a.badge:focus {
   transition: all 0.3s ease-in-out;
   opacity: 1;
 }
-.jumbotron.ad .gradient-before,
-.jumbotron.ad .gradient-after,
-.jumbotron.ad .pre-gradient-before,
-.jumbotron.ad .pre-gradient-after {
-  transition: all 0.2s ease-in-out;
-  transition-delay: 0s;
-  visibility: hidden;
-  opacity: 0;
-}
 .jumbotron.ad .gradient-before {
   background-image: linear-gradient(45deg, #ff4c35, #ffd419);
 }
@@ -5779,16 +5807,13 @@ a.badge:focus {
 .jumbotron.ad:hover {
   transition: all 0.2s ease-in-out;
   opacity: 1;
+  /*.gradient-before, .gradient-after, .pre-gradient-before, .pre-gradient-after {
+				visibility: visible;
+				opacity: 1;
+			}*/
 }
 .jumbotron.ad:hover .up {
   transition: all 0.3s ease-in-out;
-  opacity: 1;
-}
-.jumbotron.ad:hover .gradient-before,
-.jumbotron.ad:hover .gradient-after,
-.jumbotron.ad:hover .pre-gradient-before,
-.jumbotron.ad:hover .pre-gradient-after {
-  visibility: visible;
   opacity: 1;
 }
 .jumbotron .form-group-vertical .control-label {
@@ -5800,6 +5825,26 @@ a.badge:focus {
 }
 .jumbotron .form-group-vertical .btn-group {
   margin-bottom: 0px;
+}
+.jumbotron .gradient-before,
+.jumbotron .gradient-after,
+.jumbotron .pre-gradient-before,
+.jumbotron .pre-gradient-after {
+  transition: all 0.2s ease-in-out;
+  transition-delay: 0s;
+  visibility: hidden;
+  opacity: 0;
+}
+.jumbotron:hover {
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+.jumbotron:hover .gradient-before,
+.jumbotron:hover .gradient-after,
+.jumbotron:hover .pre-gradient-before,
+.jumbotron:hover .pre-gradient-after {
+  visibility: visible;
+  opacity: 1;
 }
 .thumbnail {
   position: relative;
@@ -5867,6 +5912,7 @@ a.thumbnail.active {
   position: relative;
   border: none;
   padding: 0px 0px 3px;
+  margin-bottom: 30px;
   /*h4.sequencer, h4.duration, h4.key {
 			transition: all .2s ease-in;
 			opacity: 0;
@@ -7625,14 +7671,23 @@ button.close {
 .w-100 {
   width: 100% !important;
 }
+.w-a {
+  width: auto;
+}
 .mt-0 {
   margin-top: 0px;
+}
+.m-0 {
+  margin: 0px;
 }
 .mt-5 {
   margin-top: 5px;
 }
 .mt-20 {
   margin-top: 20px !important;
+}
+.mr-5 {
+  margin-right: 5px !important;
 }
 .mb-5 {
   margin-bottom: 5px !important;
@@ -7682,6 +7737,35 @@ button.close {
 }
 .form-group-vertical .btn-group {
   margin-bottom: 5px;
+}
+.cart-link .logo-firstpart {
+  letter-spacing: -2px;
+  margin-right: -2px;
+}
+.cart-link .logo-secondpart {
+  letter-spacing: -2px;
+}
+.edit-button {
+  display: inline-block;
+  position: absolute;
+  width: auto;
+  text-transform: uppercase;
+  margin: 0px;
+  font-family: Roboto-Light-Italic;
+  letter-spacing: -1px;
+  font-size: 18px;
+}
+.edit-button.r-25 {
+  right: 25px;
+}
+.edit-button.t-17 {
+  top: 17px;
+}
+.edit-button.r-28 {
+  right: 28px;
+}
+.edit-button.t-11 {
+  top: 11px;
 }
 @-ms-viewport {
   width: device-width;

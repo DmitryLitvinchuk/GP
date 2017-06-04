@@ -11,7 +11,7 @@
 
     <!-- Fixed navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
+      <div class="container-fluid">
         <div class="navbar-header">
           <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" type="button">
             <span class="icon-bar"></span>
@@ -34,8 +34,8 @@
                 <li><a href="#">techno</a></li>
               </ul>
             </li>
-            <li><a href="#">tracks</a></li>
-            <li><a href="#">producers</a></li>
+            <li class="visible-xs visible-md visible-lg"><a href="#">tracks</a></li>
+            <li class="visible-xs visible-md visible-lg"><a href="#">producers</a></li>
             <li>
             	<form class="navbar-form navbar-right" role="search">
 				<div class="form-group">
@@ -49,11 +49,19 @@
           <ul class="nav navbar-nav navbar-right">
           		<!--<button type="button" class="btn btn-default btn-sm navbar-btn">login</button>
           		<button type="button" class="btn btn-default btn-sm navbar-btn">register</button>-->
+          	<li class="visible-md visible-lg">
+				<a href="#" class="cart-link">
+					1350$
+				</a>
+          	</li>
 			<li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="padding-top: 5px; padding-bottom: 5px;">
-                <img src="images/cover.jpg" class="img-circle img-responsive" style="width: 44px;" alt="">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+				<span class="logo-firstpart">hard</span>
+				<span class="logo-secondpart">well</span>
+             	<b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
+                <li class="visible-xs visible-sm"><a href="#">cart 1350$</a></li>
                 <li><a href="#">orders</a></li>
                 <li><a href="#">tracks</a></li>
                 <li><a href="#">messages</a></li>
@@ -67,10 +75,16 @@
     </div>
     
 	<body>
+   <div class="img-background" style="background-image: url(images/tomorrowland.jpg)"></div>
+   <div class="img-gradient"></div>
     <div class="container">
     	<div class="row">
-      		<div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
+      		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
        			<div class="jumbotron register">
+					<div class="gradient-before hidden-xs"></div>
+					<div class="gradient-after hidden-xs"></div>
+					<div class="pre-gradient-before hidden-xs"></div>
+					<div class="pre-gradient-after hidden-xs"></div>
 					<div class="caption">
 						<h2 class="text-center mt-0">
 							<span class="logo-firstpart">regist</span>
@@ -79,7 +93,7 @@
 						<form class="form-horizontal">
 							<div class="form-group form-group-vertical">
 								<div class="row">
-								 <div class="col-xs-offset-3 col-xs-6 ">
+								 <div class="col-xs-offset-2 col-xs-8 col-sm-offset-3 col-sm-6">
 									<div class="btn-group btn-group-justified" data-toggle="buttons">
 									  <label class="btn btn-primary active">
 										<input type="radio" name="options" id="option1" autocomplete="off" checked> user
@@ -123,16 +137,20 @@
 								<div class="col-xs-12 col-sm-offset-1 col-sm-10 mb-10">
 									<input class="form-control" id="repeat-password-input" type="password" placeholder="Password">
 								</div>
-								<div class="col-xs-offset-4 col-xs-4 col-sm-offset-4 col-sm-4 text-center">
-                                	<button class="btn btn-primary inline-block mt-20" type="submit">Register</button>
+								<div class="col-xs-offset-2 col-xs-8 col-sm-offset-4 col-sm-4 text-center">
+                                	<button class="btn btn-border btn-buy inline-block mt-20" type="submit">Register</button>
                             	</div>
 							</div>
 						</form>
 					</div>
 			    </div>
        		</div>
-       		<div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
+       		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
        			<div class="jumbotron register">
+					<div class="gradient-before hidden-xs"></div>
+					<div class="gradient-after hidden-xs"></div>
+					<div class="pre-gradient-before hidden-xs"></div>
+					<div class="pre-gradient-after hidden-xs"></div>
 					<div class="caption">
 						<h2 class="text-center mt-0">
 							<span class="logo-firstpart">log</span>
@@ -161,8 +179,8 @@
 										<small><a href="#">forgot password?</a></small>
 									</h6>
 								</div>
-								<div class="col-xs-offset-4 col-xs-4 col-sm-offset-4 col-sm-4 text-center">
-                                	<button class="btn btn-primary inline-block mt-5" type="submit">login</button>
+								<div class="col-xs-offset-2 col-xs-8 col-sm-offset-4 col-sm-4 text-center">
+                                	<button class="btn btn-border btn-buy inline-block mt-5" type="submit">login</button>
                             	</div>
 							</div>
 						</form>
@@ -197,6 +215,12 @@
 								<span class="logo-firstpart">electro</span>
 								<span class="logo-secondpart">house</span>
 							</h2>
+							<div class="visible-xs caption text-left">
+								  <h5 class="date inline-block w-a mr-5">25.03.2017</h5>
+								  <h5 class="bpm inline-block w-a mr-5">135 BPM</h5>
+								  <h5 class="key inline-block w-a mr-5">E maj</h5>
+								  <h5 class="duration inline-block w-a mr-5">5-6 min</h5>
+							</div>
 								<table class="table table-responsive mb-0 text-center">
 								  <tbody>
 									<tr>
@@ -261,8 +285,8 @@
 										  <tbody>
 											  <tr>
 													<td class="width-50"><button class="btn btn-border btn-circle btn-play btn-play-sm btn-play-text-normal" type="button">1</button></td>
-													<td>lead</td>
-													<td>28.03.2017</td>
+													<td>Chris Schweizer, James Dymond - SPECTRUM</td>
+													<td class="hidden-xs">28.03.2017</td>
 													<td class="text-green">
 														checked
 													</td>
@@ -270,7 +294,7 @@
 											<tr>
 												<td class="width-50"><button class="btn btn-border btn-circle btn-play btn-play-sm btn-play-text-normal" type="button">2</button></td>
 												<td>BASSLINE</td>
-												<td>29.03.2017</td>
+												<td class="hidden-xs">29.03.2017</td>
 												<td class="text-gray">
 														<span>processing </span><span class="glyphicon glyphicon-time"></span>
 												</td>
@@ -284,7 +308,8 @@
 												<td>DOWN</td>
 												<td>
 													<div class="form-group mb-0 pull-right">
-														<button class="btn btn-border btn-xs btn-buy btn-blue" href="#">CHOOSE FILE</button>
+														<button class="btn btn-border btn-xs btn-buy btn-blue hidden-xs" href="#">CHOOSE FILE</button>
+														<button class="btn btn-border btn-xs btn-buy btn-blue visible-xs" href="#">FILE</button>
 													</div>
                         						</td>
                         						<td>
@@ -296,7 +321,8 @@
 												<td>INTRO</td>
 												<td class="width-50">
 													<div class="form-group mb-0 pull-right">
-														<button class="btn btn-border btn-xs btn-buy btn-blue" href="#">CHOOSE FILE</button>
+														<button class="btn btn-border btn-xs btn-buy btn-blue hidden-xs" href="#">CHOOSE FILE</button>
+														<button class="btn btn-border btn-xs btn-buy btn-blue visible-xs" href="#">FILE</button>
 													</div>
                         						</td>
                         						<td>
@@ -317,7 +343,7 @@
 								</div>
 							</div>
 						 </div>
-						 <div class="up">
+						 <div class="hidden-xs up">
 							  <h4 class="date">25.03.2017</h4>
 							  <div class="caption">
 								  <h4 class="bpm">135 BPM</h4>
@@ -338,6 +364,12 @@
 								<span class="logo-firstpart">future</span>
 								<span class="logo-secondpart">house</span>
 							</h2>
+							<div class="visible-xs caption text-left">
+								  <h5 class="date inline-block w-a mr-5">25.03.2017</h5>
+								  <h5 class="bpm inline-block w-a mr-5">135 BPM</h5>
+								  <h5 class="key inline-block w-a mr-5">E maj</h5>
+								  <h5 class="duration inline-block w-a mr-5">5-6 min</h5>
+							</div>
 								<table class="table table-responsive mb-0 text-center">
 								  <tbody>
 									<tr>
@@ -402,7 +434,7 @@
 											  <tr>
 													<td class="width-50"><button class="btn btn-border btn-circle btn-play btn-play-sm btn-play-text-normal" type="button">1</button></td>
 													<td>lead</td>
-													<td>28.03.2017</td>
+													<td class="hidden-xs">28.03.2017</td>
 													<td class="text-green">
 														checked
 													</td>
@@ -410,7 +442,7 @@
 											<tr>
 												<td class="width-50"><button class="btn btn-border btn-circle btn-play btn-play-sm btn-play-text-normal" type="button">2</button></td>
 												<td>BASSLINE</td>
-												<td>29.03.2017</td>
+												<td class="hidden-xs">29.03.2017</td>
 												<td class="text-green">
 														checked
 												</td>
@@ -429,7 +461,7 @@
 								</div>
 							</div>
 						 </div>
-						 <div class="up">
+						 <div class="up hidden-xs">
 							  <h4 class="date">25.03.2017</h4>
 							  <div class="caption">
 								  <h4 class="bpm">135 BPM</h4>
@@ -452,6 +484,12 @@
 								<span class="logo-firstpart">psy</span>
 								<span class="logo-secondpart">trance</span>
 							</h2>
+							<div class="visible-xs caption text-left">
+								  <h5 class="date inline-block w-a mr-5">25.03.2017</h5>
+								  <h5 class="bpm inline-block w-a mr-5">135 BPM</h5>
+								  <h5 class="key inline-block w-a mr-5">E maj</h5>
+								  <h5 class="duration inline-block w-a mr-5">5-6 min</h5>
+							</div>
 								<table class="table table-responsive mb-0 text-center">
 								  <tbody>
 									<tr>
@@ -517,7 +555,7 @@
 											  <tr>
 													<td class="width-50"><button class="btn btn-border btn-circle btn-play btn-play-sm btn-play-text-normal" type="button">1</button></td>
 													<td>lead</td>
-													<td>28.03.2017</td>
+													<td class="hidden-xs">28.03.2017</td>
 													<td class="text-green">
 														checked
 													</td>
@@ -525,7 +563,7 @@
 											<tr>
 												<td class="width-50"><button class="btn btn-border btn-circle btn-play btn-play-sm btn-play-text-normal" type="button">2</button></td>
 												<td>BASSLINE</td>
-												<td>29.03.2017</td>
+												<td class="hidden-xs">29.03.2017</td>
 												<td>
 													<button class="btn btn-border btn-circle btn-play btn-play-sm btn-blue pl-0" type="button">YES</button>
 													<button class="btn btn-border btn-circle btn-play btn-red btn-play-sm" type="button">no</button>
@@ -545,7 +583,7 @@
 								</div>
 							</div>
 						 </div>
-						 <div class="up">
+						 <div class="up hidden-xs">
 							  <h4 class="date">25.03.2017</h4>
 							  <div class="caption">
 								  <h4 class="bpm">135 BPM</h4>
@@ -566,6 +604,12 @@
 								<span class="logo-firstpart">uplifting</span>
 								<span class="logo-secondpart">trance</span>
 							</h2>
+							<div class="visible-xs caption text-left">
+								  <h5 class="date inline-block w-a mr-5">25.03.2017</h5>
+								  <h5 class="bpm inline-block w-a mr-5">135 BPM</h5>
+								  <h5 class="key inline-block w-a mr-5">E maj</h5>
+								  <h5 class="duration inline-block w-a mr-5">5-6 min</h5>
+							</div>
 								<table class="table table-responsive mb-0 text-center">
 								  <tbody>
 									<tr>
@@ -630,7 +674,7 @@
 											  <tr>
 													<td class="width-50"><button class="btn btn-border btn-circle btn-play btn-play-sm btn-play-text-normal" type="button">1</button></td>
 													<td>lead</td>
-													<td>28.03.2017</td>
+													<td class="hidden-xs">28.03.2017</td>
 													<td class="text-green">
 														checked
 													</td>
@@ -638,7 +682,7 @@
 											<tr>
 												<td class="width-50"><button class="btn btn-border btn-circle btn-play btn-play-sm btn-play-text-normal" type="button">2</button></td>
 												<td>BASSLINE</td>
-												<td>29.03.2017</td>
+												<td class="hidden-xs">29.03.2017</td>
 												<td class="text-green">
 														checked
 												</td>
@@ -657,7 +701,7 @@
 								</div>
 							</div>
 						 </div>
-						 <div class="up">
+						 <div class="up hidden-xs">
 							  <h4 class="date">25.03.2017</h4>
 							  <div class="caption">
 								  <h4 class="bpm">135 BPM</h4>
@@ -674,10 +718,10 @@
        		<span class="logo-firstpart">news</span>
 	   </h3>
        <div class="jumbotron news">
-        	<div class="gradient-before"></div>
-        	<div class="gradient-after"></div>
-        	<div class="pre-gradient-before"></div>
-        	<div class="pre-gradient-after"></div>
+        	<div class="gradient-before hidden-xs"></div>
+        	<div class="gradient-after hidden-xs"></div>
+        	<div class="pre-gradient-before hidden-xs"></div>
+        	<div class="pre-gradient-after hidden-xs"></div>
         	<div class="row">
 				 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<div class="caption">
@@ -702,10 +746,10 @@
 			<span class="logo-secondpart">page</span>
 	   </h3>
         <div class="jumbotron producer">
-        	<div class="gradient-before"></div>
-        	<div class="gradient-after"></div>
-        	<div class="pre-gradient-before"></div>
-        	<div class="pre-gradient-after"></div>
+        	<div class="gradient-before hidden-xs"></div>
+			<div class="gradient-after hidden-xs"></div>
+			<div class="pre-gradient-before hidden-xs"></div>
+			<div class="pre-gradient-after hidden-xs"></div>
         	<div class="row">
 				 <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
 					<img class="img-responsive" src="images/maschine-jam-mad-zach-exploration.jpg" alt=".img-thumbnail">
@@ -729,6 +773,7 @@
 						<h3 class="producer-info">time: <small>15-30 days</small></h3>
 						<h3 class="producer-info">average price: <small>350$</small></h3>
 					 </div>
+					 <a href="#" class="edit-button r-25 t-17">edit</a>
 				 </div>
 				 <button class="btn btn-border btn-buy pull-right btn-message" type="button">SEND MESSAGE</button>
 			 </div>
@@ -736,10 +781,10 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <div class="jumbotron producer table">
-				<div class="gradient-before"></div>
-				<div class="gradient-after"></div>
-				<div class="pre-gradient-before"></div>
-				<div class="pre-gradient-after"></div>
+				<div class="gradient-before hidden-xs"></div>
+				<div class="gradient-after hidden-xs"></div>
+				<div class="pre-gradient-before hidden-xs"></div>
+				<div class="pre-gradient-after hidden-xs"></div>
 				<div class="row">
 					 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<div class="caption w-100">
@@ -786,13 +831,14 @@
 						 </div>
 					 </div>
 				 </div>
+				 <a href="#" class="edit-button r-28 t-11">edit</a>
 			  </div>
       </div>
        
        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
        	<div class="thumbnail track">
-       		<div class="gradient-before"></div>
-        	<div class="gradient-after"></div>
+       		<div class="gradient-before hidden-xs"></div>
+        	<div class="gradient-after hidden-xs"></div>
 		  <img class="img-responsive bg-cover" src="images/cover.jpg" alt=".img-thumbnail">
 		  <div class="caption caption-title">
 			<h3 class="title">HEAR ME NOW</h3>
@@ -836,6 +882,12 @@
 								<span class="logo-firstpart">bass</span>
 								<span class="logo-secondpart">house</span>
 							</h2>
+							<div class="visible-xs caption text-left">
+								  <h5 class="date inline-block w-a mr-5">25.03.2017</h5>
+								  <h5 class="bpm inline-block w-a mr-5">135 BPM</h5>
+								  <h5 class="key inline-block w-a mr-5">E maj</h5>
+								  <h5 class="duration inline-block w-a mr-5">5-6 min</h5>
+							</div>
 							<table class="table table-responsive mb-0">
 							  <tbody>
 								<tr>
@@ -866,7 +918,7 @@
 								</div>
 							</div>
 						 </div>
-						 <div class="up">
+						 <div class="up hidden-xs">
 							  <h4 class="date">25.03.2017</h4>
 							  <div class="caption">
 								  <h4 class="bpm">135 BPM</h4>
@@ -886,6 +938,12 @@
 							<h2 class="type">
 								<span class="logo-firstpart">trance</span>
 							</h2>
+							<div class="visible-xs caption text-left">
+								  <h5 class="date inline-block w-a mr-5">25.03.2017</h5>
+								  <h5 class="bpm inline-block w-a mr-5">135 BPM</h5>
+								  <h5 class="key inline-block w-a mr-5">E maj</h5>
+								  <h5 class="duration inline-block w-a mr-5">5-6 min</h5>
+							</div>
 							<table class="table table-responsive mb-0">
 							  <tbody>
 								<tr>
@@ -912,11 +970,14 @@
 							</table>
 							<div class="row">
 								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-									<button class="btn btn-border btn-buy pull-right" href="#">500$</button>
+									<div class="btn-group pull-right" data-toggle="buttons">
+									  <button class="btn btn-border" href="#">edit</button>
+									  <button class="btn btn-border btn-buy" href="#">delete</button>
+									</div>
 								</div>
 							</div>
 						 </div>
-						 <div class="up">
+						 <div class="up hidden-xs">
 							  <h4 class="date">25.03.2017</h4>
 							  <div class="caption">
 								  <h4 class="bpm">135 BPM</h4>
