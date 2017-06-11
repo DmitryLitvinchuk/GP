@@ -5957,6 +5957,11 @@ a.thumbnail.active {
   font-family: Roboto-Bold-Italic;
   letter-spacing: -2px;
 }
+.thumbnail.track h3.title,
+.thumbnail.track h4.title {
+  line-height: 26px;
+  margin-bottom: 3px;
+}
 .thumbnail.track h4.artist {
   font-size: 14px;
   font-family: Roboto-Light-Italic;
@@ -7689,6 +7694,9 @@ button.close {
 .mr-5 {
   margin-right: 5px !important;
 }
+.mb-0 {
+  margin-bottom: 0 !important;
+}
 .mb-5 {
   margin-bottom: 5px !important;
 }
@@ -7703,6 +7711,12 @@ button.close {
 }
 .pr-3 {
   padding-right: 3px !important;
+}
+.pt-60 {
+  padding-top: 60px;
+}
+.pb-60 {
+  padding-bottom: 60px;
 }
 .text-green {
   color: #2ecc71;
@@ -7766,6 +7780,29 @@ button.close {
 }
 .edit-button.t-11 {
   top: 11px;
+}
+h1.extra-large {
+  font-size: 60px;
+  line-height: 50px;
+}
+h1.extra-large span.logo-firstpart {
+  letter-spacing: -5px;
+  margin-right: -12px;
+}
+h1.extra-large span.logo-secondpart {
+  letter-spacing: -5px;
+}
+.text-italic {
+  font-family: Roboto-Light-Italic !important;
+}
+.ls-2 {
+  letter-spacing: -2px !important;
+}
+h3.ls-2 {
+  font-size: 29px;
+}
+.text-red {
+  color: #e74c3c;
 }
 @-ms-viewport {
   width: device-width;
