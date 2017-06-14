@@ -269,3 +269,235 @@ h3 {
 .text-red {
 	color: #e74c3c;
 }
+
+.bg-primary-color {
+	background: @primary-darken;
+}
+/* CHAT STYLES */
+
+#custom-search-input {
+	background: @primary-darken none repeat scroll 0 0;
+	margin: 0;
+	padding: 10px;
+	.form-control {
+		border-bottom-right-radius: 20px;
+		border-top-right-radius: 20px;
+		padding-right: 35px;
+	}
+	.search-query {
+		background: @primary-darken none repeat scroll 0 0 !important;
+		border-radius: 4px;
+		height: 33px;
+		margin-bottom: 0;
+		padding-left: 7px;
+		padding-right: 7px;
+			&:focus + button {
+			z-index: 3;   
+			}
+	}
+	button {
+		background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+		border: 0 none;
+		border-radius: 3px;
+		color: #666666;
+		left: auto;
+		margin-bottom: 0;
+		margin-top: 7px;
+		margin-right: 7px;
+		padding: 2px 5px;
+		position: absolute;
+		right: 0;
+		z-index: 9999;
+		&:hover {
+			color: @white-base;
+		}
+	}
+}
+.all_conversation {
+	button {
+		background: @primary-darken none repeat scroll 0 0;
+		border: 1px solid #dddddd;
+		height: 38px;
+		text-align: left;
+		width: 100%;
+		}
+	i {
+		background: @primary-darken none repeat scroll 0 0;
+		border-radius: 100px;
+		color: #636363;
+		font-size: 17px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		width: 30px;
+		}
+	.caret {
+		bottom: 0;
+		margin: auto;
+		position: absolute;
+		right: 15px;
+		top: 0;
+		}
+	.dropdown-menu {
+		background: @primary-darken none repeat scroll 0 0;
+		border-radius: 0;
+		margin-top: 0;
+		padding: 0;
+		width: 100%;
+		}
+	ul {
+		li {
+		border-bottom: 1px solid @primary-darken;
+		line-height: normal;
+		width: 100%;
+			a {
+				color: @white-base;
+				line-height: 30px;
+				padding: 3px 20px;
+					&:hover {
+					background: @primary-darken none repeat scroll 0 0;
+					color:@white-base;
+					}
+			}
+			&:hover .sub_menu_ {
+				display: block;
+			}
+		}
+	}
+}
+.member_list {
+	background-color: @brand-primary;
+	height: 454px;
+	overflow-x: hidden;
+	overflow-y: auto;
+		.chat-body {
+		margin-left: 47px;
+		margin-top: 0;
+		}
+		.contact_sec {
+		font-family: Roboto-Light;
+		font-size: 12px;
+		text-transform: uppercase;
+		margin-top: 3px;
+		}
+		ul {
+		border: 1px solid @primary-darken;
+		}
+		li {
+			padding: 6px;
+			border-bottom: 1px solid @primary-darken;
+			padding: 6px;
+			&:last-child {
+				border-bottom:none;
+				}
+			&:hover {
+				background: @primary-darken none repeat scroll 0 0;
+				color: #fff;
+				cursor:pointer;
+			}
+		}
+}
+.header_sec {
+	font-family: Roboto-Light;
+	text-transform: uppercase;
+	.logo-firstpart, .logo-secondpart {
+		letter-spacing: -1px;
+	}
+}
+.top_nav {
+	overflow: visible;
+}
+.chat-img img {
+	height: 34px;
+	width: 34px;
+}
+.time {
+		font-size: 12px;
+	}
+.sub_menu_ {
+	background: @primary-darken none repeat scroll 0 0;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	display: none;
+	left: 100%;
+	margin-left: 0;
+	max-width: 233px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.new_message_head {
+	background: @primary-darken none repeat scroll 0 0;
+	float: left;
+	font-size: 13px;
+	font-weight: 600;
+	padding: 18px 10px;
+	width: 100%;
+		button {
+			background: @primary-darken none repeat scroll 0 0;
+			border: medium none;
+		}
+}
+.message_section {
+	border: 1px solid @primary-darken;
+}
+.chat_area {
+	background-color:@third-brand-primary ;
+	float: left;
+	height: 300px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 100%;
+	li {
+		padding: 14px 14px 0;
+		.chat-img1 img {
+			height: 40px;
+			width: 40px;
+		}
+		&:last-child {
+			padding-bottom: 10px;
+		}
+	}
+	.chat-body1 {
+		margin-left: 50px;
+	}
+	.admin_chat .chat-body1 {
+		margin-left: 0;
+		margin-right: 50px;
+	}
+}
+.chat-body1 p {
+	background: @primary-darken none repeat scroll 0 0;
+	padding: 10px;
+	margin-bottom: 0px;
+}
+.message_write {
+	background: @primary-darken none repeat scroll 0 0;
+	float: left;
+	padding: 15px;
+	width: 100%;
+		textarea.form-control {
+			height: 70px;
+			padding: 10px;
+		}
+
+}
+.chat_bottom {
+	float: left;
+	margin-top: 13px;
+	padding-left: 5px;
+	width: 100%;
+}
+.upload_btn {
+	color: @white-base;
+}
+
+.sub_menu_ {
+	li {
+		float: left;
+		width:100%;
+		a {
+			float: left;
+			width:100%;
+		}
+	}
+}
