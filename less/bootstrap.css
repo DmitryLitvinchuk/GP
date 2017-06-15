@@ -3375,33 +3375,33 @@ fieldset[disabled] a.btn {
   font-size: 10px;
   padding: 2px 2px 2px 1px;
 }
-.btn.btn-border.btn-circle.btn-play.icon {
-  font-family: "Flaticon";
-  padding: 0px;
-}
-.btn.btn-border.btn-circle.btn-play.icon.flaticon-play-button,
-.btn.btn-border.btn-circle.btn-play.icon.flaticon-metronome {
-  padding: 0px 0px 0px 2px;
-}
-.btn.btn-border.btn-circle.btn-play.icon2 {
-  font-family: "Flaticon2";
-  padding: 0px;
-}
-.btn.btn-border.btn-circle.btn-play.icon2.flaticon-avatar {
-  padding: 0px 0px 0px 2px;
-}
-.btn.btn-border.btn-circle.btn-play.btn-play-text-normal {
-  font-style: normal;
-  font-size: 16px;
-  padding-top: 3px;
-  padding-left: 1px;
-  font-family: Roboto-Light;
-}
 .btn.btn-border.btn-circle.btn-play:hover,
 .btn.btn-border.btn-circle.btn-play:focus,
 .btn.btn-border.btn-circle.btn-play.focus {
   border-color: #ffd419;
   background-image: linear-gradient(25deg, #ff4c35, #ffd419);
+}
+.btn.btn-border.btn-circle.icon {
+  font-family: "Flaticon";
+  padding: 0px;
+}
+.btn.btn-border.btn-circle.icon.flaticon-play-button,
+.btn.btn-border.btn-circle.icon.flaticon-metronome {
+  padding: 0px 0px 0px 2px;
+}
+.btn.btn-border.btn-circle.icon2 {
+  font-family: "Flaticon2";
+  padding: 0px;
+}
+.btn.btn-border.btn-circle.icon2.flaticon-avatar {
+  padding: 0px 0px 0px 2px;
+}
+.btn.btn-border.btn-circle.btn-play-text-normal {
+  font-style: normal;
+  font-size: 16px;
+  padding-top: 3px;
+  padding-left: 1px;
+  font-family: Roboto-Light;
 }
 .btn.btn-border.btn-circle.btn-like {
   width: 50px;
@@ -3449,10 +3449,13 @@ fieldset[disabled] a.btn {
   border-color: #cccccc;
   background-image: linear-gradient(45deg, transparent, transparent);
 }
-.btn.btn-message {
+.btn.btn-absolute {
   position: absolute;
   right: 5px;
   bottom: 7px;
+}
+.btn.btn-absolute.r-20 {
+  right: 20px;
 }
 .btn.btn-blue:hover,
 .btn.btn-blue:focus,
@@ -7697,6 +7700,9 @@ button.close {
 .mt-20 {
   margin-top: 20px !important;
 }
+.mt-25 {
+  margin-top: 25px !important;
+}
 .mr-5 {
   margin-right: 5px !important;
 }
@@ -7711,6 +7717,9 @@ button.close {
 }
 .mb-0 {
   margin-bottom: 0px !important;
+}
+.pt-0 {
+  padding-top: 0px !important;
 }
 .pl-0 {
   padding-left: 0px !important;

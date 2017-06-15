@@ -86,7 +86,14 @@
 					font-size: 10px;
 					padding: 2px 2px 2px 1px;
 				}
-				&.icon {
+				  &:hover,
+				  &:focus,
+				  &.focus {
+					border-color: @brand-warning;
+					background-image: linear-gradient(25deg, @brand-success, @brand-warning);
+				  }
+			}
+			&.icon {
 				font-family: "Flaticon";
 				padding: 0px;
 					&.flaticon-play-button, &.flaticon-metronome {
@@ -107,13 +114,6 @@
 					padding-left: 1px;
 					font-family: Roboto-Light;
 				}
-				  &:hover,
-				  &:focus,
-				  &.focus {
-					border-color: @brand-warning;
-					background-image: linear-gradient(25deg, @brand-success, @brand-warning);
-				  }
-			}
 			&.btn-like {
 				width: 50px;
 				height: 50px;
@@ -160,10 +160,13 @@
 			background-image: linear-gradient(45deg, transparent, transparent);
 		}
 	}
-	&.btn-message {
+	&.btn-absolute {
 		position: absolute;
 		right: 5px;
 		bottom: 7px;
+		&.r-20 {
+			right: 20px;
+		}
 	}
 	&.btn-blue {
 		  &:hover,

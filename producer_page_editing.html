@@ -89,7 +89,8 @@
 					<div class="pre-gradient-after hidden-xs"></div>
 					<div class="row">
 						 <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
-							<img class="img-responsive" src="images/maschine-jam-mad-zach-exploration.jpg" alt=".img-thumbnail">
+							<img class="img-responsive" src="images/maschine-jam-mad-zach-exploration.jpg" alt=".img-thumbnail"> 
+							<button class="btn btn-default btn-absolute r-20" type="button">upload photo</button>
 						 </div>
 						 <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8">
 							<div class="caption">
@@ -99,21 +100,58 @@
 								</h1>
 								<h6 class="city">Geneva,</h6>
 								<h5 class="country">Italy</h5>
-								<div class="producer-buttons">
-								  <button class="btn btn-border btn-circle btn-works" type="button"><h4>9999</h4><p>level</p></button>
-								  <button class="btn btn-border btn-circle btn-works" type="button"><h4>9999</h4><p>tracks</p></button>
-								  <button class="btn btn-border btn-circle btn-works" type="button"><h4>9999</h4><p>tasks</p></button>
-								  <button class="btn btn-border btn-circle btn-works btn-works-releases" type="button"><h4>10/10</h4><p>rating</p></button>
-								</div>
-								<h3 class="producer-info">genres: <small>progressive house, tech house, deep house</small></h3>
-								<h3 class="producer-info">projects: <small>tracks, remixes, mastering</small></h3>
-								<h3 class="producer-info">time: <small>15-30 days</small></h3>
-								<h3 class="producer-info">price level: <small>middle</small></h3>
-								<h3 class="producer-info">producer workload: <small class="text-warning">in the work</small></h3>
+								<form class="form-horizontal">
+									<div class="form-group form-group-vertical">
+										<div class="col-xs-12 col-sm-12">
+											<h3 class="producer-info">genres: 
+											   <small>
+													<label class="checkbox-inline pt-0">
+														<input type="checkbox" value="progressive_house" checked> progressive house
+													</label>
+													<label class="checkbox-inline pt-0">
+														<input type="checkbox" value="tech_house" checked> tech house
+													</label>
+													<label class="checkbox-inline pt-0">
+														<input type="checkbox" value="deep_house"> deep house
+													</label>
+												</small>
+											</h3>
+											<h3 class="producer-info">projects: 
+												<small>
+													<label class="checkbox-inline pt-0">
+														<input type="checkbox" value="tracks"> tracks
+													</label>
+													<label class="checkbox-inline pt-0">
+														<input type="checkbox" value="remixes" checked> remixes
+													</label>
+													<label class="checkbox-inline pt-0">
+														<input type="checkbox" value="mastering" checked> mastering
+													</label>
+												</small>
+											</h3>
+											<!--<h3 class="producer-info">time: <small>15-30 days</small></h3>
+											<h3 class="producer-info">price level: <small>middle</small></h3>-->
+											<h3 class="producer-info mb-0">producer workload: 
+												<small>
+													<label class="checkbox-inline pt-0 text-green">
+														<input type="radio" name="workloadRadios" value="free" > free
+													</label>
+													<label class="checkbox-inline pt-0 text-warning">
+														<input type="radio" name="workloadRadios" value="in_the_work" checked> in the work
+													</label>
+													<label class="checkbox-inline pt-0 text-red">
+														<input type="radio" name="workloadRadios" value="busy"> busy
+													</label>
+												</small>
+											</h3>
+										</div>
+										<div class="col-xs-offset-8 col-xs-4 col-sm-offset-8 col-sm-4 text-right">
+												<button class="btn btn-border btn-buy inline-block mt-20" type="submit">save</button>
+											</div>
+									</div>
+								</form>
 							 </div>
-							 <a href="#" class="edit-button r-25 t-17">edit</a>
 						 </div>
-						 <button class="btn btn-border btn-buy pull-right btn-absolute" type="button">make order</button>
 					 </div>
 				  </div>
         </div>
