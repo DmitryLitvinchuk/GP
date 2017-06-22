@@ -2569,6 +2569,16 @@ th {
 .table > thead:first-child > tr:first-child > td {
   border-top: 0;
 }
+.table td:first-child {
+  text-align: left;
+}
+.table td:last-child {
+  text-align: right;
+}
+.table thead > tr > td {
+  color: #cccccc;
+  font-family: Roboto-Light-Italic;
+}
 .table > tbody + tbody {
   border-top: 2px solid rgba(204, 41, 166, 0.2);
 }
@@ -3451,11 +3461,11 @@ fieldset[disabled] a.btn {
 }
 .btn.btn-absolute {
   position: absolute;
-  right: 5px;
-  bottom: 7px;
-}
-.btn.btn-absolute.r-20 {
-  right: 20px;
+  /*right: 5px;
+		bottom: 7px;
+		&.r-20 {
+			right: 20px;
+		}*/
 }
 .btn.btn-blue:hover,
 .btn.btn-blue:focus,
@@ -4333,8 +4343,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   line-height: 1;
   color: #ffffff;
   text-align: center;
-  background-color: #151722;
-  border: 1px solid #151722;
+  background-color: #050611;
+  border: 1px solid #181923;
   border-radius: 20px;
 }
 .input-group-addon.input-sm {
@@ -7715,6 +7725,12 @@ button.close {
 .b-0 {
   border: 0px !important;
 }
+.r-32 {
+  right: 32px !important;
+}
+.b-17 {
+  bottom: 17px !important;
+}
 .mb-0 {
   margin-bottom: 0px !important;
 }
@@ -7723,6 +7739,9 @@ button.close {
 }
 .pl-0 {
   padding-left: 0px !important;
+}
+.pl-7 {
+  padding-left: 7px !important;
 }
 .pr-3 {
   padding-right: 3px !important;
@@ -7794,6 +7813,24 @@ button.close {
   right: 28px;
 }
 .edit-button.t-11 {
+  top: 11px;
+}
+.r-5 {
+  right: 5px;
+}
+.b-7 {
+  bottom: 7px;
+}
+.r-25 {
+  right: 25px;
+}
+.t-17 {
+  top: 17px;
+}
+.r-28 {
+  right: 28px;
+}
+.t-11 {
   top: 11px;
 }
 h1.extra-large {
@@ -8040,6 +8077,13 @@ h3.ls-2 {
 .sub_menu_ li a {
   float: left;
   width: 100%;
+}
+.bg-image {
+  background-image: url(images/boiler_room.jpg);
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 @-ms-viewport {
   width: device-width;

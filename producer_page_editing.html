@@ -62,10 +62,12 @@
               </a>
               <ul class="dropdown-menu">
                 <li class="visible-xs visible-sm"><a href="#">cart 1350$</a></li>
-                <li><a href="#">orders</a></li>
-                <li><a href="all_tracks.html">tracks</a></li>
-                <li><a href="#">messages</a></li>
-                <li><a href="#">settings</a></li>
+                 <li><a href="my_producer_page.html">my profile</a></li>
+                <li><a href="tasks.html">tasks</a></li>
+                <li><a href="orders.html">orders</a></li>
+                <li><a href="producer_tracks.html">tracks</a></li>
+                <li><a href="messages.html">messages</a></li>
+                <li><a href="settings.html">settings</a></li>
                 <li><a href="#">log out</a></li>
               </ul>
             </li>
@@ -90,7 +92,7 @@
 					<div class="row">
 						 <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
 							<img class="img-responsive" src="images/maschine-jam-mad-zach-exploration.jpg" alt=".img-thumbnail"> 
-							<button class="btn btn-default btn-absolute r-20" type="button">upload photo</button>
+							<button class="btn btn-default btn-absolute r-32 b-17" type="button">upload photo</button>
 						 </div>
 						 <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8">
 							<div class="caption">
@@ -126,6 +128,19 @@
 													</label>
 													<label class="checkbox-inline pt-0">
 														<input type="checkbox" value="mastering" checked> mastering
+													</label>
+												</small>
+											</h3>
+											<h3 class="producer-info">languages: 
+												<small>
+													<label class="checkbox-inline pt-0">
+														<input type="checkbox" value="english"> english
+													</label>
+													<label class="checkbox-inline pt-0">
+														<input type="checkbox" value="spanish" checked> spanish
+													</label>
+													<label class="checkbox-inline pt-0">
+														<input type="checkbox" value="russian" checked> russian
 													</label>
 												</small>
 											</h3>
@@ -168,12 +183,44 @@
 								<span class="logo-firstpart">prices</span>
 							</h2>
 							<div class="table-responsive b-0">
-							<table class="table table-hover">
+							<table class="table table-hover table-responsive text-center">
+							  <thead>
+								  <tr>
+								   <td class="text-left">title</td>
+								   <td>up to</td>
+								   <td>price</td>
+								   <td></td>
+								  </tr>
+							  </thead>
 							  <tbody>
 								<tr>
-									<td>mastering</td>
-									<td>3-5 days</td>
-									<td><button class="btn btn-border btn-buy btn-sm" href="#">~ 150$</button></td>
+									<td class="text-left">mastering</td>
+									<td>3 days</td>
+									<td>~ 300$</td>
+									<td>
+										<button class="btn btn-border btn-blue btn-sm" href="#">edit</button>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input class="form-control" id="title-task-input" type="text" placeholder="TITLE (MASTERING)">
+									</td>
+									<td>
+										<div class="input-group input-group-sm">
+											<span class="input-group-addon">UP TO</span>
+											<input class="form-control" id="price-task-input" type="number" placeholder="3">
+											<span class="input-group-addon">DAYS</span>
+										</div>
+									</td>
+									<td>
+										<div class="input-group input-group-sm">
+											<input class="form-control" id="price-task-input" type="number" placeholder="PRICE (200$)">
+											<span class="input-group-addon">$</span>
+										</div>
+									</td>
+									<td>
+										<button class="btn btn-border btn-blue btn-sm" href="#">SAVE</button>
+									</td>
 								</tr>
 							  </tbody>
 							</table>
@@ -183,14 +230,25 @@
 								<span class="logo-secondpart">works</span>
 							</h2>
 							<div class="table-responsive b-0">
-							<table class="table table-hover">
+							<table class="table table-hover table-responsive text-center">
 							  <tbody>
 								<tr>
 									<td><button class="btn btn-border btn-circle btn-play btn-play-sm" type="button">play</button></td>
 									<td>BACK TO THE MUSIC</td>
 									<td>tech house</td>
 									<td>05.01.2017</td>
-									<td><button class="btn btn-border btn-buy btn-sm" href="#">RELEASED</button></td>
+									<td>id</td>
+									<td><button class="btn btn-border btn-blue btn-sm" href="#">edit</button></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>
+										<button class="btn btn-border btn-buy btn-sm" href="#">+ add promo-work</button>
+									</td>
 								</tr>
 							  </tbody>
 							</table>
@@ -199,29 +257,47 @@
 								<span class="logo-firstpart">presets</span>
 							</h2>
 							<div class="table-responsive b-0">
-							<table class="table table-hover table-responsive">
+							<table class="table table-hover table-responsive text-center">
 							  <tbody>
 								<tr>
 									<td><button class="btn btn-border btn-circle btn-play btn-play-sm" type="button">play</button></td>
 									<td>massive attack</td>
 									<td>ni massive</td>
 									<td>bassline</td>
-									<td><button class="btn btn-border btn-buy btn-sm" href="#">FREE</button></td>
+									<td>30$</td>
+									<td><button class="btn btn-border btn-blue btn-sm" href="#">edit</button></td>
 								</tr>
 								<tr>
 									<td><button class="btn btn-border btn-circle btn-play btn-play-sm" type="button">play</button></td>
 									<td>LYDIA</td>
 									<td>ni massive</td>
 									<td>lead</td>
-									<td><button class="btn btn-border btn-buy btn-sm" href="#">FREE</button></td>
+									<td>free</td>
+									<td><button class="btn btn-border btn-blue btn-sm" href="#">edit</button></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>
+										<button class="btn btn-border btn-buy btn-sm" href="#">+ add preset</button>
+									</td>
 								</tr>
 							  </tbody>
 							</table>
 							</div>
+							<h2 class="type">
+							<button class="btn btn-border btn-xl btn-buy btn-sm" href="#">+ add new category</button>
+								<!--<a href="#">
+									<span class="logo-firstpart">+ ADD</span>
+									<span class="logo-secondpart">CATEGORY</span>
+								</a>-->
+							</h2>
 						 </div>
 					 </div>
 				 </div>
-				 <a href="#" class="edit-button r-28 t-11">edit</a>
 			  </div>
       </div>
        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">

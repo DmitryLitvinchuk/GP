@@ -54,6 +54,16 @@ th {
       }
     }
   }
+	td:first-child {
+		text-align: left;
+	}
+	td:last-child {
+		text-align: right;
+	}
+	thead > tr > td {
+		color: @white-dark;
+		font-family: Roboto-Light-Italic;
+	}
   // Account for multiple tbody instances
   > tbody + tbody {
     border-top: 2px solid @table-border-color;
