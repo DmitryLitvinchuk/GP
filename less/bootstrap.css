@@ -7741,6 +7741,9 @@ button.close {
 .pl-7 {
   padding-left: 7px !important;
 }
+.pl-100 {
+  padding-left: 100px !important;
+}
 .pr-3 {
   padding-right: 3px !important;
 }
@@ -7842,11 +7845,12 @@ h1.extra-large {
   line-height: 50px;
 }
 h1.extra-large span.logo-firstpart {
-  letter-spacing: -5px;
+  font-size: 78px;
+  letter-spacing: -8px;
   margin-right: -12px;
 }
 h1.extra-large span.logo-secondpart {
-  letter-spacing: -5px;
+  letter-spacing: -6px;
 }
 .text-italic {
   font-family: Roboto-Light-Italic !important;
