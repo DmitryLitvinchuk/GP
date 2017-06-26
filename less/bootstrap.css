@@ -2572,15 +2572,12 @@ th {
 .table td:first-child {
   text-align: left;
 }
-.table td:last-child {
-  text-align: right;
-}
 .table thead > tr > td {
   color: #cccccc;
   font-family: Roboto-Light-Italic;
 }
 .table > tbody + tbody {
-  border-top: 2px solid rgba(204, 41, 166, 0.2);
+  border-top: 0px solid rgba(204, 41, 166, 0.2);
 }
 .table .table {
   background-color: #050611;
@@ -3444,7 +3441,7 @@ fieldset[disabled] a.btn {
 .btn.btn-border.btn-circle.btn-works.focus,
 .btn.btn-border.btn-circle.btn-works.active {
   border-color: #8963f6;
-  background-image: linear-gradient(15deg, #8963f6, #6fecf1);
+  background-image: linear-gradient(45deg, #cc29a6, #8963f6);
 }
 .btn.btn-border:hover,
 .btn.btn-border:focus,
@@ -6033,6 +6030,7 @@ a.thumbnail.active {
   display: inline-block;
   width: auto;
   margin: 0;
+  color: #cccccc;
   font-family: Roboto-Light;
   font-style: italic;
 }
@@ -8084,6 +8082,12 @@ h3.ls-2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.light-italic {
+  font-family: Roboto-Light-Italic;
+}
+.link-orange:hover {
+  color: #ffd419;
 }
 @-ms-viewport {
   width: device-width;

@@ -62,7 +62,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li class="visible-xs visible-sm"><a href="#">cart 1350$</a></li>
-                <li><a href="my_producer_page.html">my profile</a></li>
+                 <li><a href="my_producer_page.html">my profile</a></li>
                 <li><a href="tasks.html">tasks</a></li>
                 <li><a href="orders.html">orders</a></li>
                 <li><a href="producer_tracks.html">tracks</a></li>
@@ -91,7 +91,8 @@
 					<div class="pre-gradient-after hidden-xs"></div>
 					<div class="row">
 						 <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
-							<img class="img-responsive" src="images/maschine-jam-mad-zach-exploration.jpg" alt=".img-thumbnail">
+							<img class="img-responsive" src="images/maschine-jam-mad-zach-exploration.jpg" alt=".img-thumbnail"> 
+							<button class="btn btn-default btn-absolute r-32 b-17" type="button">upload photo</button>
 						 </div>
 						 <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8">
 							<div class="caption">
@@ -101,20 +102,71 @@
 								</h1>
 								<h6 class="city">Geneva,</h6>
 								<h5 class="country">Italy</h5>
-								<div class="producer-buttons">
-								  <button class="btn btn-border btn-circle btn-works" type="button"><h4>9999</h4><p>level</p></button>
-								  <button class="btn btn-border btn-circle btn-works" type="button"><h4>9999</h4><p>tracks</p></button>
-								  <button class="btn btn-border btn-circle btn-works" type="button"><h4>9999</h4><p>tasks</p></button>
-								  <button class="btn btn-border btn-circle btn-works btn-works-releases" type="button"><h4>10/10</h4><p>rating</p></button>
-								</div>
-								<h3 class="producer-info">genres: <small>progressive house, tech house, deep house</small></h3>
-								<h3 class="producer-info">projects: <small>tracks, remixes, mastering</small></h3>
-								<h3 class="producer-info">language: <small>english, spanish</small></h3>
-								<h3 class="producer-info">time: <small>15-30 days</small></h3>
-								<h3 class="producer-info">producer workload: <small class="text-warning">in the work</small></h3>
+								<form class="form-horizontal">
+									<div class="form-group form-group-vertical">
+										<div class="col-xs-12 col-sm-12">
+											<h3 class="producer-info">genres: 
+											   <small>
+													<label class="checkbox-inline pt-0">
+														<input type="checkbox" value="progressive_house" checked> progressive house
+													</label>
+													<label class="checkbox-inline pt-0">
+														<input type="checkbox" value="tech_house" checked> tech house
+													</label>
+													<label class="checkbox-inline pt-0">
+														<input type="checkbox" value="deep_house"> deep house
+													</label>
+												</small>
+											</h3>
+											<h3 class="producer-info">projects: 
+												<small>
+													<label class="checkbox-inline pt-0">
+														<input type="checkbox" value="tracks"> tracks
+													</label>
+													<label class="checkbox-inline pt-0">
+														<input type="checkbox" value="remixes" checked> remixes
+													</label>
+													<label class="checkbox-inline pt-0">
+														<input type="checkbox" value="mastering" checked> mastering
+													</label>
+												</small>
+											</h3>
+											<h3 class="producer-info">languages: 
+												<small>
+													<label class="checkbox-inline pt-0">
+														<input type="checkbox" value="english"> english
+													</label>
+													<label class="checkbox-inline pt-0">
+														<input type="checkbox" value="spanish" checked> spanish
+													</label>
+													<label class="checkbox-inline pt-0">
+														<input type="checkbox" value="russian" checked> russian
+													</label>
+												</small>
+											</h3>
+											<!--<h3 class="producer-info">time: <small>15-30 days</small></h3>
+											<h3 class="producer-info">price level: <small>middle</small></h3>-->
+											<h3 class="producer-info mb-0">producer workload: 
+												<small>
+													<label class="checkbox-inline pt-0 text-green">
+														<input type="radio" name="workloadRadios" value="free" > free
+													</label>
+													<label class="checkbox-inline pt-0 text-warning">
+														<input type="radio" name="workloadRadios" value="in_the_work" checked> in the work
+													</label>
+													<label class="checkbox-inline pt-0 text-red">
+														<input type="radio" name="workloadRadios" value="busy"> busy
+													</label>
+												</small>
+											</h3>
+										</div>
+										<div class="col-xs-offset-8 col-xs-4 col-sm-offset-8 col-sm-4 text-right">
+												<button class="btn btn-border btn-buy inline-block mt-20" type="submit">save</button>
+											</div>
+									</div>
+								</form>
 							 </div>
 						 </div>
-						 <button class="btn btn-border btn-buy pull-right btn-absolute r-5 b-7" type="button">make order</button>
 					 </div>
 				  </div>
         </div>
@@ -128,7 +180,7 @@
 					 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<div class="caption w-100">
 							<h2 class="type">
-								<span class="logo-firstpart">prices</span>
+								<span class="logo-firstpart">offers</span>
 							</h2>
 							<div class="table-responsive b-0">
 							<table class="table table-hover table-responsive text-center m-0">
@@ -136,16 +188,45 @@
 								  <tr>
 								   <td class="text-left">title</td>
 								   <td>up to</td>
+								   <td>price</td>
 								   <td></td>
 								  </tr>
 							  </thead>
 							  <tbody>
 								<tr>
-									<td>mastering</td>
-									<td>3-5 days</td>
-									<td><button class="btn btn-border btn-buy btn-xs" href="#">~ 150$</button></td>
+									<td class="text-left">mastering</td>
+									<td>3 days</td>
+									<td>~ 300$</td>
+									<td>
+										<button class="btn btn-xs btn-border btn-blue btn-sm pl-7" href="#">edit</button>
+									</td>
 								</tr>
 							  </tbody>
+							</table>
+							<table class="table table-hover table-responsive text-center m-0">
+								<tbody>
+									<tr>
+										<td>
+											<input class="form-control" id="title-task-input" type="text" placeholder="TITLE (MASTERING)">
+										</td>
+										<td>
+											<div class="input-group input-group-sm">
+												<span class="input-group-addon">UP TO</span>
+												<input class="form-control" id="price-task-input" type="number" placeholder="3">
+												<span class="input-group-addon">DAYS</span>
+											</div>
+										</td>
+										<td>
+											<div class="input-group input-group-sm">
+												<input class="form-control" id="price-task-input" type="number" placeholder="PRICE (200$)">
+												<span class="input-group-addon">$</span>
+											</div>
+										</td>
+										<td>
+											<button class="btn btn-xs btn-border btn-blue btn-sm" href="#">SAVE</button>
+										</td>
+									</tr>
+								</tbody>
 							</table>
 							</div>
 							<h2 class="type">
@@ -158,20 +239,95 @@
 								  <tr>
 								   <td></td>
 								   <td>title</td>
-								   <td class="text-center">genre</td>
-								   <td></td>  
+								   <td>genre</td>
+								   <!--<td>date</td>
+								   <td>type</td>-->
+								   <td></td>
 								  </tr>
 							  </thead>
 							  <tbody>
 								<tr>
 									<td><button class="btn btn-border btn-circle btn-play btn-play-sm" type="button">play</button></td>
 									<td>before mastering</td>
-									<td class="text-center">tech house</td>
+									<td>tech house</td>
+									<!--<td>05.01.2017</td>
+									<td>id</td>-->
+									<td>
+										<button class="btn btn-xs btn-border btn-blue btn-sm pl-7" href="#">edit</button>
+									</td>
+								</tr>
+								<!--<tr>
 									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>
+										<button class="btn btn-border btn-buy btn-sm" href="#">+ add promo-work</button>
+									</td>
+								</tr>-->
+							  </tbody>
+							</table>
+							<table class="table table-hover table-responsive text-center m-0">
+								<tbody>
+							  	<tr>
+									<td>
+										<input class="form-control" id="title-promo-input" type="text" placeholder="TITLE (AFTER MASTERING)">
+									</td>
+									<td>
+										<input class="form-control" id="Genre-promo-input" type="text" placeholder="GENRE (BIG ROOM)">
+									</td>
+									<td>
+										<div class="form-group mb-0 pull-right">
+											<button class="btn btn-border btn-xs btn-buy btn-blue hidden-xs" href="#">CHOOSE FILE</button>
+											<button class="btn btn-border btn-xs btn-buy btn-blue visible-xs" href="#">FILE</button>
+										</div>
+									</td>
+									<td>
+										<button class="btn btn-xs btn-border btn-blue btn-sm" href="#">SAVE</button>
+									</td>
 								</tr>
 							  </tbody>
 							</table>
+							<h2>
+							  	<button class="btn btn-border btn-buy btn-sm pull-right" href="#">+ add promo-work</button>
+							</h2>
 							</div>
+							<!--<h2 class="type">
+								<span class="logo-firstpart">presets</span>
+							</h2>
+							<div class="table-responsive b-0">
+							<table class="table table-hover table-responsive text-center m-0">
+							  <tbody>
+								<tr>
+									<td><button class="btn btn-border btn-circle btn-play btn-play-sm" type="button">play</button></td>
+									<td>massive attack</td>
+									<td>ni massive</td>
+									<td>bassline</td>
+									<td>30$</td>
+									<td>
+										<button class="btn btn-xs btn-border btn-blue btn-sm pl-7" href="#">edit</button>
+									</td>
+								</tr>
+								<tr>
+									<td><button class="btn btn-border btn-circle btn-play btn-play-sm" type="button">play</button></td>
+									<td>LYDIA</td>
+									<td>ni massive</td>
+									<td>lead</td>
+									<td>free</td>
+									<td>
+										<button class="btn btn-xs btn-border btn-blue btn-sm pl-7" href="#">edit</button>
+									</td>
+								</tr>
+							  </tbody>
+							</table>
+							<h2>
+							  	<button class="btn btn-border btn-buy btn-sm pull-right" href="#">+ add preset</button>
+							</h2>
+							</div>
+							<h2 class="type">
+							<button class="btn btn-border btn-xl btn-buy btn-sm" href="#">+ add new category</button>
+							</h2>-->
 						 </div>
 					 </div>
 				 </div>
