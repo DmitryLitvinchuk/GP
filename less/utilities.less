@@ -131,6 +131,10 @@
 	margin-top: 5px;
 }
 
+.mt-8 {
+	margin-top: 8px;
+}
+
 .mt-20 {
 	margin-top: 20px !important;
 }
@@ -164,6 +168,10 @@
 
 .mb-0 {
 	margin-bottom: 0px !important;
+}
+
+.ml-10 {
+	margin-left: 10px !important;
 }
 
 .pt-0 {
@@ -582,4 +590,31 @@ h3 {
 
 .h-120 {
 	height: 120px;
+}
+
+.three-form-control {
+	width: 100%;
+	.form-control:first-child {
+		width: 20%;
+	}
+	.form-control:nth-child(2) {
+		width: 50%;
+	}
+	.form-control:last-child, .form-control:nth-child(3) {
+		width: 30%;
+	}
+	label.btn {
+		width: 30%;
+		background-image: linear-gradient(0deg, @input-bg, @input-bg);
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 0px;
+		border: 1px solid @jumbotron-bg;
+		  &:hover,
+		  &:focus,
+		  &.focus, &.active {
+			color: @btn-border-border-color-hover;
+			background-image: linear-gradient(45deg, @brand-danger, @brand-pink);
+			text-decoration: none;
+		  }
+	}
 }

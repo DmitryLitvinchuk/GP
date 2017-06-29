@@ -3060,11 +3060,11 @@ select[multiple].input-lg {
   height: 48px;
   line-height: 48px;
 }
-.form-group-lg textarea.form-control,
-.form-group-lg select[multiple].form-control {
+textarea.form-control,
+select[multiple].form-control {
   height: auto;
 }
-.form-group-lg .form-control-static {
+.form-control-static {
   height: 48px;
   min-height: 40px;
   padding: 11px 16px;
@@ -4334,6 +4334,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   vertical-align: middle;
 }
 .input-group-addon {
+  text-transform: uppercase;
   padding: 6px 12px;
   font-size: 15px;
   font-weight: normal;
@@ -7705,6 +7706,9 @@ button.close {
 .mt-5 {
   margin-top: 5px;
 }
+.mt-8 {
+  margin-top: 8px;
+}
 .mt-20 {
   margin-top: 20px !important;
 }
@@ -7731,6 +7735,9 @@ button.close {
 }
 .mb-0 {
   margin-bottom: 0px !important;
+}
+.ml-10 {
+  margin-left: 10px !important;
 }
 .pt-0 {
   padding-top: 0px !important;
@@ -8112,6 +8119,34 @@ h3.ls-2 {
 }
 .h-120 {
   height: 120px;
+}
+.three-form-control {
+  width: 100%;
+}
+.three-form-control .form-control:first-child {
+  width: 20%;
+}
+.three-form-control .form-control:nth-child(2) {
+  width: 50%;
+}
+.three-form-control .form-control:last-child,
+.three-form-control .form-control:nth-child(3) {
+  width: 30%;
+}
+.three-form-control label.btn {
+  width: 30%;
+  background-image: linear-gradient(0deg, #050611, #050611);
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border: 1px solid #181923;
+}
+.three-form-control label.btn:hover,
+.three-form-control label.btn:focus,
+.three-form-control label.btn.focus,
+.three-form-control label.btn.active {
+  color: #ffffff;
+  background-image: linear-gradient(45deg, #cc29a6, #8963f6);
+  text-decoration: none;
 }
 @-ms-viewport {
   width: device-width;
