@@ -1616,7 +1616,7 @@ mark,
   text-transform: capitalize;
 }
 .text-muted {
-  color: #fdfdfd;
+  color: #b7b7bb;
 }
 .text-primary {
   color: #181923;
@@ -2534,7 +2534,7 @@ table {
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
-  color: #fdfdfd;
+  color: #b7b7bb;
   text-align: left;
 }
 th {
@@ -3442,6 +3442,15 @@ fieldset[disabled] a.btn {
 .btn.btn-border.btn-circle.btn-works.active {
   border-color: #8963f6;
   background-image: linear-gradient(45deg, #cc29a6, #8963f6);
+}
+.btn.btn-border.btn-circle.btn-xs {
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+  font-size: 16px;
+  padding: 0px;
+  padding-top: 2px;
 }
 .btn.btn-border:hover,
 .btn.btn-border:focus,
@@ -7751,6 +7760,9 @@ button.close {
 .pl-100 {
   padding-left: 100px !important;
 }
+.pr-2 {
+  padding-right: 2px !important;
+}
 .pr-3 {
   padding-right: 3px !important;
 }
@@ -8147,6 +8159,14 @@ h3.ls-2 {
   color: #ffffff;
   background-image: linear-gradient(45deg, #cc29a6, #8963f6);
   text-decoration: none;
+}
+.footer {
+  background-color: #14151d;
+  padding: 10px;
+  padding-top: 5px;
+}
+.text-xs {
+  font-size: 9px;
 }
 @-ms-viewport {
   width: device-width;
